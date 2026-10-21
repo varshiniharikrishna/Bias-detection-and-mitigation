@@ -1,0 +1,66 @@
+{
+  "role": "software_engineer",
+  "cap": 5,
+  "criteria": [
+    [
+      "education",
+      "Holds a bachelor's degree in Computer Science or related field",
+      20
+    ],
+    [
+      "programming_language",
+      "Proficient in Python or Java",
+      19
+    ],
+    [
+      "api_experience",
+      "Experience with REST APIs",
+      12
+    ],
+    [
+      "database_experience",
+      "Experience with SQL databases",
+      12
+    ],
+    [
+      "git_experience",
+      "Familiarity with Git",
+      6
+    ],
+    [
+      "ci_cd_experience",
+      "Experience with CI/CD pipelines",
+      6
+    ]
+  ],
+  "hints": {
+    "education": [
+      "degree",
+      "bachelor",
+      "BS"
+    ],
+    "programming_language": [
+      "python",
+      "java"
+    ],
+    "api_experience": [
+      "api",
+      "rest",
+      "http"
+    ],
+    "database_experience": [
+      "db",
+      "sql",
+      "database"
+    ],
+    "git_experience": [
+      "git",
+      "version_control"
+    ],
+    "ci_cd_experience": [
+      "ci",
+      "cd",
+      "pipeline"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+    "resume_id": "R001",
+    "name": "Jordan Reed",
+    "job_role": "Software Engineer",
+    "education": "B.Tech Computer Science",
+    "cgpa": 8.9,
+    "experience_years": 2,
+    "skills": [
+        "Python",
+        "SQL",
+        "AWS",
+        "Flutter"
+    ],
+    "projects": [
+        "Inventory Management System",
+        "Cloud Expense Tracker"
+    ]
+}

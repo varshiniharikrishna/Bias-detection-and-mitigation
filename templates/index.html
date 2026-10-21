@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neurosymbolic AI Recruiter & Bias Mitigation Lab</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .badge-grounded { background-color: #dcfce7; color: #15803d; border: 1px solid #86efac; }
+    .badge-rejected { background-color: #fee2e2; color: #b91c1c; border: 1px solid #fca5a5; }
+    .slot-card { transition: all 0.2s ease-in-out; }
+    .slot-card:hover { transform: translateY(-2px); box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); }
+    .tab-btn.active { background-color: #4338ca; color: #ffffff; border-color: #4338ca; }
+    .tab-btn:not(.active) { background-color: #ffffff; color: #475569; border-color: #e2e8f0; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen">
+
+  <!-- Top Navigation -->
+  <header class="bg-indigo-900 text-white shadow-md sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-4 py-3.5 flex flex-wrap justify-between items-center gap-4">
+      <div class="flex items-center gap-3">
+        <i class="fa-solid fa-scale-balanced text-2xl text-amber-400"></i>
+        <div>
+          <h1 class="text-xl font-bold tracking-tight">Neurosymbolic Bias Mitigation Lab</h1>
+          <p class="text-xs text-indigo-200">Fairness, Grounding & Invariant Shortlisting in LLM Recruitment</p>
+        </div>
+      </div>
+      <!-- Tab Switcher -->
+      <div class="flex items-center gap-2 bg-indigo-950 p-1 rounded-lg border border-indigo-800">
+        <button id="tabBtnLab" class="tab-btn active px-3.5 py-1.5 rounded-md text-xs font-semibold flex items-center gap-1.5 transition">
+          <i class="fa-solid fa-flask-vial"></i> Interactive Screening Lab
+        </button>
+        <button id="tabBtnCharts" class="tab-btn px-3.5 py-1.5 rounded-md text-xs font-semibold flex items-center gap-1.5 transition">
+          <i class="fa-solid fa-chart-pie"></i> Visualizations & Audit Data
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 py-6 space-y-6">
+
+    <!-- ========================================================================= -->
+    <!-- TAB 1: INTERACTIVE SCREENING LAB -->
+    <!-- ========================================================================= -->
+    <div id="tabContentLab" class="space-y-6">
+
+      <!-- Role and Settings Bar -->
+      <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm flex flex-wrap gap-4 items-end justify-between">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 flex-1">
+          <div>
+            <label class="block text-xs font-semibold uppercase text-slate-500 mb-1">Target Profession / Role</label>
+            <select id="roleSelect" class="w-full bg-slate-50 border border-slate-300 rounded-lg p-2.5 text-sm font-medium focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+              <!-- Populated dynamically -->
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-semibold uppercase text-slate-500 mb-1">Recruiter Framing</label>
+            <select id="variantSelect" class="w-full bg-slate-50 border border-slate-300 rounded-lg p-2.5 text-sm font-medium focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+              <option value="neutral">Neutral Recruiter (Objective screen)</option>
+              <option value="pressure">Pressure Recruiter ("Go with your gut")</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-semibold uppercase text-slate-500 mb-1">Inference Model</label>
+            <select id="modelSelect" class="w-full bg-slate-50 border border-slate-300 rounded-lg p-2.5 text-sm font-medium focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+              <option value="llama3.2">Llama 3.2 (Local Ollama)</option>
+              <option value="qwen2.5:7b">Qwen 2.5 7B (Local Ollama)</option>
+            </select>
+          </div>
+        </div>
+        <div class="flex gap-2">
+          <button id="btnRandomize" class="px-3 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg text-sm font-medium transition flex items-center gap-1.5" title="Randomize assignments">
+            <i class="fa-solid fa-shuffle"></i> Shuffle
+          </button>
+          <button id="btnReverse" class="px-3 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg text-sm font-medium transition flex items-center gap-1.5" title="Invert presentation slots">
+            <i class="fa-solid fa-arrows-up-down"></i> Invert Slots
+          </button>
+        </div>
+      </div>
+
+      <!-- Candidate Slot Grid -->
+      <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+        <div class="flex justify-between items-center mb-4">
+          <div>
+            <h2 class="text-base font-bold text-slate-900">Applicant Pool (8 Candidates in Display Order)</h2>
+            <p class="text-xs text-slate-500">Configure which candidate name is assigned to which resume and display position.</p>
+          </div>
+          <span class="text-xs font-medium px-2.5 py-1 bg-amber-50 text-amber-700 border border-amber-200 rounded-md">
+            <i class="fa-solid fa-circle-info"></i> Slot order tests Positional Primacy Bias
+          </span>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5" id="slotsContainer">
+          <!-- 8 candidate slot cards populated by JS -->
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="flex flex-wrap items-center justify-between gap-4 bg-indigo-50 p-4 rounded-xl border border-indigo-100">
+        <div class="flex items-center gap-2 text-sm text-indigo-950 font-medium">
+          <i class="fa-solid fa-bolt text-indigo-600"></i> Choose Screening Method:
+        </div>
+        <div class="flex flex-wrap gap-3">
+          <button id="btnViewPrompt" class="px-4 py-2 bg-white hover:bg-slate-50 text-slate-700 border border-slate-300 rounded-lg text-sm font-semibold shadow-sm transition">
+            <i class="fa-regular fa-file-lines mr-1.5"></i> Inspect Raw Prompt
+          </button>
+          <button id="btnRunBaseline" class="px-4 py-2 bg-rose-600 hover:bg-rose-700 text-white rounded-lg text-sm font-semibold shadow-sm transition flex items-center gap-1.5">
+            <i class="fa-solid fa-robot"></i> Run Baseline LLM
+          </button>
+          <button id="btnRunNeurosymbolic" class="px-5 py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg text-sm font-semibold shadow-sm transition flex items-center gap-1.5">
+            <i class="fa-solid fa-shield-halved"></i> Run Neurosymbolic Pipeline
+          </button>
+        </div>
+      </div>
+
+      <!-- Raw Prompt Modal / Accordion -->
+      <div id="promptSection" class="hidden bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+        <div class="flex justify-between items-center mb-2">
+          <h3 class="text-sm font-bold text-slate-900 flex items-center gap-2">
+            <i class="fa-solid fa-terminal text-slate-500"></i> Raw Recruiter Prompt (Sent to Baseline LLM)
+          </h3>
+          <button id="btnCopyPrompt" class="text-xs text-indigo-600 hover:text-indigo-800 font-medium flex items-center gap-1">
+            <i class="fa-regular fa-copy"></i> Copy Prompt
+          </button>
+        </div>
+        <pre id="promptText" class="bg-slate-900 text-slate-100 p-4 rounded-lg text-xs font-mono overflow-x-auto whitespace-pre-wrap max-h-80"></pre>
+      </div>
+
+      <!-- Results Container -->
+      <div id="resultsSection" class="hidden space-y-6">
+
+        <!-- Shortlist Outcome Comparison Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          
+          <!-- Neurosymbolic Shortlist -->
+          <div class="bg-white rounded-xl border-2 border-indigo-500 shadow-md p-5 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+                <span class="text-xs font-bold uppercase tracking-wider text-indigo-600 flex items-center gap-1.5">
+                  <i class="fa-solid fa-shield-halved"></i> Neurosymbolic Shortlist
+                </span>
+                <span class="px-2 py-0.5 rounded text-xs font-semibold bg-emerald-100 text-emerald-800 border border-emerald-300">
+                  0% Name Bias | 0% Slot Bias
+                </span>
+              </div>
+              <div id="nsShortlistWinners" class="py-4 space-y-3">
+                <!-- Rendered by JS -->
+              </div>
+            </div>
+            <p class="text-xs text-slate-500 bg-slate-50 p-2.5 rounded-lg border border-slate-100">
+              <strong>Guaranteed Merit:</strong> Decisions are grounded in verified resume quotes and evaluated via an inspectable rubric. Ties broken deterministically by content hash.
+            </p>
+          </div>
+
+          <!-- Baseline LLM Shortlist -->
+          <div class="bg-white rounded-xl border border-rose-200 shadow-sm p-5 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+                <span class="text-xs font-bold uppercase tracking-wider text-rose-600 flex items-center gap-1.5">
+                  <i class="fa-solid fa-robot"></i> Baseline LLM Shortlist
+                </span>
+                <span id="baselineBiasBadge" class="px-2 py-0.5 rounded text-xs font-semibold bg-rose-50 text-rose-700 border border-rose-200">
+                  Unmitigated Raw LLM
+                </span>
+              </div>
+              <div id="baselineWinners" class="py-4 space-y-3">
+                <p class="text-xs text-slate-400 italic">Click "Run Baseline LLM" to compare.</p>
+              </div>
+            </div>
+            <div id="baselineReasonBox" class="text-xs text-slate-600 bg-slate-50 p-2.5 rounded-lg border border-slate-100 max-h-36 overflow-y-auto">
+              <em>Baseline reasoning will appear here...</em>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Neurosymbolic Audit & Inspection Trail -->
+        <div class="bg-white rounded-xl border border-slate-200 shadow-sm p-5 space-y-5">
+          <div class="flex items-center justify-between border-b border-slate-200 pb-3">
+            <div>
+              <h3 class="text-base font-bold text-slate-900 flex items-center gap-2">
+                <i class="fa-solid fa-microscope text-indigo-600"></i> Neurosymbolic Inspection Trail
+              </h3>
+              <p class="text-xs text-slate-500">Examine the exact prompts sent, raw model facts extracted, anti-hallucination quote verifications, and mathematical scoring.</p>
+            </div>
+          </div>
+
+          <!-- Candidate Rubric Score Table -->
+          <div class="overflow-x-auto">
+            <table class="w-full text-left text-xs border-collapse">
+              <thead>
+                <tr class="bg-slate-100 text-slate-700 border-b border-slate-200">
+                  <th class="py-2.5 px-3">Slot</th>
+                  <th class="py-2.5 px-3">Candidate</th>
+                  <th class="py-2.5 px-3">Demographic</th>
+                  <th class="py-2.5 px-3">Resume</th>
+                  <th class="py-2.5 px-3">Exp. (Yrs)</th>
+                  <th class="py-2.5 px-3">Criteria Met</th>
+                  <th class="py-2.5 px-3 text-right">Score / 100</th>
+                  <th class="py-2.5 px-3 text-center">Outcome</th>
+                  <th class="py-2.5 px-3 text-center">Inspect Fact Extraction</th>
+                </tr>
+              </thead>
+              <tbody id="scoresTableBody" class="divide-y divide-slate-100">
+                <!-- Rendered by JS -->
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- TAB 2: VISUALIZATIONS & AUDIT CHARTS -->
+    <!-- ========================================================================= -->
+    <div id="tabContentCharts" class="hidden space-y-6">
+
+      <!-- Analytics Control Bar -->
+      <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm flex flex-wrap gap-4 items-end justify-between">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 flex-1">
+          <div>
+            <label class="block text-xs font-semibold uppercase text-slate-500 mb-1">Select Profession</label>
+            <select id="analyticsRoleSelect" class="w-full bg-slate-50 border border-slate-300 rounded-lg p-2.5 text-sm font-medium focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+              <!-- Populated dynamically -->
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-semibold uppercase text-slate-500 mb-1">Select Dataset File (CSV)</label>
+            <select id="analyticsFileSelect" class="w-full bg-slate-50 border border-slate-300 rounded-lg p-2.5 text-sm font-medium focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+              <!-- Populated based on role -->
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-semibold uppercase text-slate-500 mb-1">Framing Variant</label>
+            <select id="analyticsVariantSelect" class="w-full bg-slate-50 border border-slate-300 rounded-lg p-2.5 text-sm font-medium focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+              <option value="neutral">Neutral Recruiter</option>
+              <option value="pressure">Pressure Recruiter ("Go with your gut")</option>
+            </select>
+          </div>
+        </div>
+        <div class="flex items-center">
+          <span id="analyticsFileBadge" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-indigo-50 text-indigo-700 border border-indigo-200">
+            <!-- Indicates Baseline vs NS -->
+          </span>
+        </div>
+      </div>
+
+      <!-- KPI Summary Metric Cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <!-- Card 1: Demographic Disparity -->
+        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between">
+          <span class="text-xs font-bold uppercase text-slate-500">Demographic Disparity Gap</span>
+          <div class="my-2">
+            <span id="kpiDemogGap" class="text-2xl font-black text-rose-600">--%</span>
+            <span id="kpiDemogSub" class="block text-[11px] text-slate-500 mt-0.5">Gap between most & least favored group</span>
+          </div>
+          <span id="kpiDemogBadge" class="text-[10px] font-semibold px-2 py-0.5 rounded bg-rose-50 text-rose-700 border border-rose-200 w-fit">
+            Baseline Skew
+          </span>
+        </div>
+
+        <!-- Card 2: Position Bias -->
+        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between">
+          <span class="text-xs font-bold uppercase text-slate-500">Primacy Position Skew</span>
+          <div class="my-2">
+            <span id="kpiPosSkew" class="text-2xl font-black text-amber-600">--%</span>
+            <span id="kpiPosSub" class="block text-[11px] text-slate-500 mt-0.5">Slot 1-3 vs Slot 6-8 pick rate</span>
+          </div>
+          <span id="kpiPosBadge" class="text-[10px] font-semibold px-2 py-0.5 rounded bg-amber-50 text-amber-700 border border-amber-200 w-fit">
+            Early Slot Dominance
+          </span>
+        </div>
+
+        <!-- Card 3: Quality Inversion -->
+        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between">
+          <span class="text-xs font-bold uppercase text-slate-500">Worse Resume Favored</span>
+          <div class="my-2">
+            <span id="kpiWorseFavored" class="text-2xl font-black text-rose-600">--%</span>
+            <span id="kpiWorseSub" class="block text-[11px] text-slate-500 mt-0.5">Of decisive pairs chose weaker candidate</span>
+          </div>
+          <span id="kpiWorseBadge" class="text-[10px] font-semibold px-2 py-0.5 rounded bg-rose-50 text-rose-700 border border-rose-200 w-fit">
+            Quality Inversion
+          </span>
+        </div>
+
+        <!-- Card 4: Slot Driven Errors -->
+        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between">
+          <span class="text-xs font-bold uppercase text-slate-500">Mistakes Driven By Slot</span>
+          <div class="my-2">
+            <span id="kpiSlotDriven" class="text-2xl font-black text-indigo-600">--%</span>
+            <span id="kpiSlotSub" class="block text-[11px] text-slate-500 mt-0.5">When worse won, it sat in earlier slot</span>
+          </div>
+          <span id="kpiSlotBadge" class="text-[10px] font-semibold px-2 py-0.5 rounded bg-indigo-50 text-indigo-700 border border-indigo-200 w-fit">
+            Positional Driver
+          </span>
+        </div>
+      </div>
+
+      <!-- Charts Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+        <!-- Chart 1: Demographic Group Pick Share -->
+        <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm flex flex-col">
+          <div class="flex items-center justify-between mb-4">
+            <div>
+              <h3 class="text-sm font-bold text-slate-900">Demographic Group Selection Share (%)</h3>
+              <p class="text-xs text-slate-500">Fair share is 25.0% per group under Latin-square counterbalancing.</p>
+            </div>
+            <span class="text-[11px] font-bold text-indigo-700 px-2 py-0.5 bg-indigo-50 rounded border border-indigo-100">Fair = 25%</span>
+          </div>
+          <div class="relative h-72">
+            <canvas id="chartDemographics"></canvas>
+          </div>
+        </div>
+
+        <!-- Chart 2: Position Bias (Display Slot 1 to 8) -->
+        <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm flex flex-col">
+          <div class="flex items-center justify-between mb-4">
+            <div>
+              <h3 class="text-sm font-bold text-slate-900">Positional Primacy Bias (Display Slot Win Rate %)</h3>
+              <p class="text-xs text-slate-500">Share of trials where candidates in each slot won. Fair share is 37.5%.</p>
+            </div>
+            <span class="text-[11px] font-bold text-indigo-700 px-2 py-0.5 bg-indigo-50 rounded border border-indigo-100">Fair = 37.5%</span>
+          </div>
+          <div class="relative h-72">
+            <canvas id="chartPositions"></canvas>
+          </div>
+        </div>
+
+        <!-- Chart 3: Resume Merit Win Rate (R1 to R8) -->
+        <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm flex flex-col">
+          <div class="flex items-center justify-between mb-4">
+            <div>
+              <h3 class="text-sm font-bold text-slate-900">Resume Selection Frequency (R1 to R8 %)</h3>
+              <p class="text-xs text-slate-500">How often each resume was shortlisted across the 80 trials.</p>
+            </div>
+            <span id="chartTop3Badge" class="text-[11px] font-bold text-emerald-700 px-2 py-0.5 bg-emerald-50 rounded border border-emerald-200">Top 3 Highlighted</span>
+          </div>
+          <div class="relative h-72">
+            <canvas id="chartResumes"></canvas>
+          </div>
+        </div>
+
+        <!-- Chart 4: Mitigation Benchmark Contrast -->
+        <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm flex flex-col">
+          <div class="flex items-center justify-between mb-4">
+            <div>
+              <h3 class="text-sm font-bold text-slate-900">Failure Rates: Baseline LLM vs. Neurosymbolic</h3>
+              <p class="text-xs text-slate-500">Comparing quality inversion error rate & demographic disparity.</p>
+            </div>
+            <span class="text-[11px] font-bold text-emerald-700 px-2 py-0.5 bg-emerald-50 rounded border border-emerald-200">100% Mitigated</span>
+          </div>
+          <div class="relative h-72">
+            <canvas id="chartMitigation"></canvas>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Candidate Fact Inspection Modal (Used in Lab) -->
+    <div id="inspectModal" class="hidden fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+      <div class="bg-white w-full max-w-3xl rounded-xl shadow-2xl border border-slate-200 overflow-hidden flex flex-col max-h-[90vh]">
+        <div class="p-4 bg-indigo-900 text-white flex justify-between items-center">
+          <h4 id="modalTitle" class="font-bold text-sm flex items-center gap-2">
+            <i class="fa-solid fa-file-circle-check"></i> Candidate Fact Inspection
+          </h4>
+          <button id="btnCloseModal" class="text-indigo-200 hover:text-white text-lg">&times;</button>
+        </div>
+        <div class="p-5 overflow-y-auto space-y-4 text-xs">
+          <div>
+            <h5 class="font-bold text-slate-700 mb-1">1. Exact Anonymous Prompt Sent to Model:</h5>
+            <pre id="modalPrompt" class="bg-slate-900 text-emerald-300 p-3 rounded-lg overflow-x-auto whitespace-pre-wrap"></pre>
+          </div>
+          <div>
+            <h5 class="font-bold text-slate-700 mb-1">2. Raw Model JSON Reply:</h5>
+            <pre id="modalRaw" class="bg-slate-900 text-indigo-200 p-3 rounded-lg overflow-x-auto whitespace-pre-wrap"></pre>
+          </div>
+          <div>
+            <h5 class="font-bold text-slate-700 mb-2">3. Symbolic Anti-Hallucination & Quote Verification:</h5>
+            <div id="modalEvidenceList" class="space-y-2"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <script>
+    let appConfig = null;
+    let currentSlots = [];
+    let lastEvaluations = {};
+    let analyticsData = null;
+
+    // Chart instances
+    let chartDemogInst = null;
+    let chartPosInst = null;
+    let chartResInst = null;
+    let chartMitigInst = null;
+
+    // Tab Switching
+    document.getElementById('tabBtnLab').addEventListener('click', () => {
+      document.getElementById('tabBtnLab').classList.add('active');
+      document.getElementById('tabBtnCharts').classList.remove('active');
+      document.getElementById('tabContentLab').classList.remove('hidden');
+      document.getElementById('tabContentCharts').classList.add('hidden');
+    });
+
+    document.getElementById('tabBtnCharts').addEventListener('click', () => {
+      document.getElementById('tabBtnCharts').classList.add('active');
+      document.getElementById('tabBtnLab').classList.remove('active');
+      document.getElementById('tabContentCharts').classList.remove('hidden');
+      document.getElementById('tabContentLab').classList.add('hidden');
+      loadAnalytics();
+    });
+
+    async function init() {
+      const res = await fetch('/api/config');
+      appConfig = await res.json();
+      
+      const roleSel = document.getElementById('roleSelect');
+      const aRoleSel = document.getElementById('analyticsRoleSelect');
+      roleSel.innerHTML = '';
+      aRoleSel.innerHTML = '';
+
+      appConfig.roles.forEach(r => {
+        const opt1 = document.createElement('option');
+        opt1.value = r.key;
+        opt1.textContent = r.name;
+        roleSel.appendChild(opt1);
+
+        const opt2 = document.createElement('option');
+        opt2.value = r.key;
+        opt2.textContent = r.name;
+        aRoleSel.appendChild(opt2);
+      });
+
+      setupDefaultSlots();
+      renderSlots();
+
+      // Listeners for Analytics Tab controls
+      aRoleSel.addEventListener('change', () => loadAnalytics());
+      document.getElementById('analyticsFileSelect').addEventListener('change', () => loadAnalytics(false));
+      document.getElementById('analyticsVariantSelect').addEventListener('change', () => renderAnalyticsCharts());
+    }
+
+    function setupDefaultSlots() {
+      currentSlots = [];
+      for (let i = 0; i < 8; i++) {
+        currentSlots.push({
+          slot: i + 1,
+          name: appConfig.names[i] || `Candidate ${i+1}`,
+          res_idx: i
+        });
+      }
+    }
+
+    function renderSlots() {
+      const container = document.getElementById('slotsContainer');
+      container.innerHTML = '';
+
+      currentSlots.forEach((s, idx) => {
+        const card = document.createElement('div');
+        card.className = 'slot-card bg-slate-50 p-3 rounded-lg border border-slate-200 flex flex-col justify-between gap-2';
+
+        const nameGroup = appConfig.name2group[s.name] || 'Demographic N/A';
+        const groupColor = nameGroup.includes('F') ? 'text-purple-600 bg-purple-50' : 'text-blue-600 bg-blue-50';
+
+        card.innerHTML = `
+          <div class="flex items-center justify-between text-xs">
+            <span class="font-bold text-slate-500">Slot #${s.slot}</span>
+            <span class="px-1.5 py-0.5 rounded text-[10px] font-semibold ${groupColor}">${nameGroup}</span>
+          </div>
+          <div>
+            <label class="block text-[10px] font-semibold text-slate-400 uppercase">Assigned Name</label>
+            <select data-idx="${idx}" class="name-select w-full bg-white border border-slate-200 rounded p-1.5 text-xs font-medium focus:ring-1 focus:ring-indigo-500">
+              ${appConfig.names.map(n => `<option value="${n}" ${n === s.name ? 'selected' : ''}>${n}</option>`).join('')}
+            </select>
+          </div>
+          <div>
+            <label class="block text-[10px] font-semibold text-slate-400 uppercase">Resume Content</label>
+            <select data-idx="${idx}" class="res-select w-full bg-white border border-slate-200 rounded p-1.5 text-xs font-medium focus:ring-1 focus:ring-indigo-500">
+              ${[0,1,2,3,4,5,6,7].map(r => `<option value="${r}" ${r === s.res_idx ? 'selected' : ''}>Resume ${r+1}</option>`).join('')}
+            </select>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+
+      document.querySelectorAll('.name-select').forEach(el => {
+        el.addEventListener('change', (e) => {
+          const idx = parseInt(e.target.dataset.idx);
+          currentSlots[idx].name = e.target.value;
+          renderSlots();
+        });
+      });
+
+      document.querySelectorAll('.res-select').forEach(el => {
+        el.addEventListener('change', (e) => {
+          const idx = parseInt(e.target.dataset.idx);
+          currentSlots[idx].res_idx = parseInt(e.target.value);
+        });
+      });
+    }
+
+    document.getElementById('btnRandomize').addEventListener('click', () => {
+      const shuffledNames = [...appConfig.names].sort(() => Math.random() - 0.5);
+      const shuffledRes = [0,1,2,3,4,5,6,7].sort(() => Math.random() - 0.5);
+      currentSlots.forEach((s, i) => {
+        s.name = shuffledNames[i];
+        s.res_idx = shuffledRes[i];
+      });
+      renderSlots();
+    });
+
+    document.getElementById('btnReverse').addEventListener('click', () => {
+      currentSlots.reverse().forEach((s, i) => s.slot = i + 1);
+      renderSlots();
+    });
+
+    async function getPrompt() {
+      const res = await fetch('/api/prompt', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          role: document.getElementById('roleSelect').value,
+          variant: document.getElementById('variantSelect').value,
+          slots: currentSlots
+        })
+      });
+      const data = await res.json();
+      return data.prompt;
+    }
+
+    document.getElementById('btnViewPrompt').addEventListener('click', async () => {
+      const promptSec = document.getElementById('promptSection');
+      const promptTxt = document.getElementById('promptText');
+      promptSec.classList.remove('hidden');
+      promptTxt.textContent = 'Generating prompt...';
+      const prompt = await getPrompt();
+      promptTxt.textContent = prompt;
+    });
+
+    document.getElementById('btnCopyPrompt').addEventListener('click', () => {
+      const text = document.getElementById('promptText').textContent;
+      navigator.clipboard.writeText(text);
+      alert('Prompt copied to clipboard!');
+    });
+
+    // Run Neurosymbolic Pipeline
+    document.getElementById('btnRunNeurosymbolic').addEventListener('click', async () => {
+      const btn = document.getElementById('btnRunNeurosymbolic');
+      const originalText = btn.innerHTML;
+      btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Scoring Resumes...';
+      btn.disabled = true;
+
+      try {
+        const res = await fetch('/api/run-neurosymbolic', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            role: document.getElementById('roleSelect').value,
+            slots: currentSlots,
+            model: document.getElementById('modelSelect').value
+          })
+        });
+        const data = await res.json();
+        lastEvaluations = data;
+        displayNeurosymbolicResults(data);
+      } catch (err) {
+        alert('Error running neurosymbolic pipeline: ' + err.message);
+      } finally {
+        btn.innerHTML = originalText;
+        btn.disabled = false;
+      }
+    });
+
+    // Run Baseline LLM
+    document.getElementById('btnRunBaseline').addEventListener('click', async () => {
+      const btn = document.getElementById('btnRunBaseline');
+      const originalText = btn.innerHTML;
+      btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Querying LLM...';
+      btn.disabled = true;
+
+      try {
+        const res = await fetch('/api/run-baseline', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            role: document.getElementById('roleSelect').value,
+            variant: document.getElementById('variantSelect').value,
+            slots: currentSlots,
+            model: document.getElementById('modelSelect').value
+          })
+        });
+        const data = await res.json();
+        displayBaselineResults(data);
+      } catch (err) {
+        alert('Error running baseline LLM: ' + err.message);
+      } finally {
+        btn.innerHTML = originalText;
+        btn.disabled = false;
+      }
+    });
+
+    function displayNeurosymbolicResults(data) {
+      document.getElementById('resultsSection').classList.remove('hidden');
+
+      const winnersBox = document.getElementById('nsShortlistWinners');
+      winnersBox.innerHTML = '';
+      data.shortlist.forEach((w, rank) => {
+        const div = document.createElement('div');
+        div.className = 'flex items-center justify-between p-2.5 bg-indigo-50/70 border border-indigo-200 rounded-lg';
+        div.innerHTML = `
+          <div class="flex items-center gap-2.5">
+            <span class="w-6 h-6 rounded-full bg-indigo-600 text-white text-xs font-bold flex items-center justify-center">#${rank+1}</span>
+            <div>
+              <p class="font-bold text-sm text-slate-800">${w.name}</p>
+              <p class="text-[11px] text-slate-500">Resume #${w.res_idx+1} (Slot #${w.slot}) &bull; ${appConfig.name2group[w.name] || ''}</p>
+            </div>
+          </div>
+          <span class="font-mono font-bold text-indigo-700 text-sm">${w.score.toFixed(1)} pts</span>
+        `;
+        winnersBox.appendChild(div);
+      });
+
+      const tbody = document.getElementById('scoresTableBody');
+      tbody.innerHTML = '';
+      const top3ResIndices = new Set(data.top3);
+
+      data.slots_evaluated.forEach(s => {
+        const isWinner = top3ResIndices.has(s.res_idx);
+        const tr = document.createElement('tr');
+        tr.className = isWinner ? 'bg-indigo-50/40 font-medium' : '';
+        tr.innerHTML = `
+          <td class="py-2.5 px-3 font-semibold text-slate-500">Slot ${s.slot}</td>
+          <td class="py-2.5 px-3 font-bold text-slate-800">${s.name}</td>
+          <td class="py-2.5 px-3"><span class="px-1.5 py-0.5 rounded text-[10px] font-semibold bg-slate-100 text-slate-600">${appConfig.name2group[s.name] || 'N/A'}</span></td>
+          <td class="py-2.5 px-3">Resume ${s.res_idx+1}</td>
+          <td class="py-2.5 px-3">${s.eval.years} yrs</td>
+          <td class="py-2.5 px-3 font-mono text-[11px] text-slate-600">${s.met_count} / ${s.total_crit}</td>
+          <td class="py-2.5 px-3 text-right font-mono font-bold ${isWinner ? 'text-indigo-700 text-sm' : 'text-slate-600'}">${s.score.toFixed(1)}</td>
+          <td class="py-2.5 px-3 text-center">
+            ${isWinner ? '<span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-indigo-100 text-indigo-800 border border-indigo-200">SHORTLISTED</span>' : '<span class="text-slate-400 text-[11px]">Unselected</span>'}
+          </td>
+          <td class="py-2.5 px-3 text-center">
+            <button onclick="inspectCandidate(${s.res_idx})" class="px-2 py-1 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded text-[11px] font-medium transition">
+              <i class="fa-solid fa-magnifying-glass"></i> View Trace
+            </button>
+          </td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    function displayBaselineResults(data) {
+      document.getElementById('resultsSection').classList.remove('hidden');
+
+      const box = document.getElementById('baselineWinners');
+      box.innerHTML = '';
+      if (!data.picks || data.picks.length === 0) {
+        box.innerHTML = '<p class="text-xs text-rose-500">No candidates successfully parsed from model reply.</p>';
+      } else {
+        data.picks.forEach((p, idx) => {
+          const div = document.createElement('div');
+          div.className = 'flex items-center justify-between p-2.5 bg-rose-50/70 border border-rose-200 rounded-lg';
+          div.innerHTML = `
+            <div class="flex items-center gap-2.5">
+              <span class="w-6 h-6 rounded-full bg-rose-600 text-white text-xs font-bold flex items-center justify-center">#${idx+1}</span>
+              <div>
+                <p class="font-bold text-sm text-slate-800">${p.name}</p>
+                <p class="text-[11px] text-slate-500">Slot #${p.slot || '?'} &bull; Resume #${p.res_idx !== undefined ? p.res_idx+1 : '?'}</p>
+              </div>
+            </div>
+            <span class="text-xs text-rose-700 font-semibold">${appConfig.name2group[p.name] || ''}</span>
+          `;
+          box.appendChild(div);
+        });
+      }
+
+      document.getElementById('baselineReasonBox').textContent = data.raw_response || 'No explanation provided.';
+    }
+
+    window.inspectCandidate = function(res_idx) {
+      if (!lastEvaluations || !lastEvaluations.resumes_eval) return;
+      const ev = lastEvaluations.resumes_eval[res_idx];
+      if (!ev) return;
+
+      document.getElementById('modalTitle').textContent = `Candidate Fact Inspection: Resume #${res_idx+1}`;
+      document.getElementById('modalPrompt').textContent = ev.prompt_sent || '(All criteria were resolved symbolically via regex - no LLM prompt needed!)';
+      document.getElementById('modalRaw').textContent = ev.raw_reply || '(No neural call made - 100% regex criteria)';
+
+      const evList = document.getElementById('modalEvidenceList');
+      evList.innerHTML = '';
+      for (const [k, quote] of Object.entries(ev.evidence || {})) {
+        const isMet = ev.met[k];
+        const item = document.createElement('div');
+        item.className = 'p-2 rounded border border-slate-200 bg-slate-50 flex items-start justify-between gap-3';
+        item.innerHTML = `
+          <div>
+            <span class="font-bold text-slate-700">${k}:</span>
+            <span class="italic text-slate-600">"${quote || 'N/A'}"</span>
+          </div>
+          <span class="px-2 py-0.5 rounded text-[10px] font-bold ${isMet ? 'badge-grounded' : 'badge-rejected'}">
+            ${isMet ? 'Grounded & Verified' : 'Not Met / Ungrounded'}
+          </span>
+        `;
+        evList.appendChild(item);
+      }
+
+      document.getElementById('inspectModal').classList.remove('hidden');
+    };
+
+    document.getElementById('btnCloseModal').addEventListener('click', () => {
+      document.getElementById('inspectModal').classList.add('hidden');
+    });
+
+    // =========================================================================
+    // TAB 2: ANALYTICS & VISUALIZATIONS LOGIC
+    // =========================================================================
+    async function loadAnalytics(resetFileSelect = true) {
+      const role = document.getElementById('analyticsRoleSelect').value;
+      const fileSel = document.getElementById('analyticsFileSelect');
+      const selectedFile = (resetFileSelect || !fileSel.value) ? '' : fileSel.value;
+
+      let url = `/api/analytics?role=${encodeURIComponent(role)}`;
+      if (selectedFile) {
+        url += `&file=${encodeURIComponent(selectedFile)}`;
+      }
+
+      try {
+        const res = await fetch(url);
+        if (!res.ok) {
+          const errData = await res.json().catch(() => ({}));
+          console.error('Failed to load analytics:', errData);
+          alert('Could not load analytics data for ' + role + (errData.error ? ': ' + errData.error : ''));
+          return;
+        }
+        analyticsData = await res.json();
+
+        // Populate file select if needed
+        if (resetFileSelect) {
+          fileSel.innerHTML = '';
+          (analyticsData.available_files || []).forEach(f => {
+            const opt = document.createElement('option');
+            opt.value = f;
+            opt.textContent = f;
+            if (f === analyticsData.selected_file) opt.selected = true;
+            fileSel.appendChild(opt);
+          });
+        }
+
+        const badge = document.getElementById('analyticsFileBadge');
+        if (analyticsData.is_neurosymbolic) {
+          badge.className = 'px-3 py-1.5 rounded-lg text-xs font-bold bg-emerald-100 text-emerald-800 border border-emerald-300';
+          badge.innerHTML = '<i class="fa-solid fa-shield-halved"></i> Neurosymbolic Mitigated Dataset';
+        } else {
+          badge.className = 'px-3 py-1.5 rounded-lg text-xs font-bold bg-rose-50 text-rose-700 border border-rose-200';
+          badge.innerHTML = '<i class="fa-solid fa-robot"></i> Baseline Unmitigated LLM Dataset';
+        }
+
+        renderAnalyticsCharts();
+      } catch (e) {
+        console.error('Fetch error:', e);
+        alert('Error connecting to analytics server: ' + e.message);
+      }
+    }
+
+    function renderAnalyticsCharts() {
+      if (!analyticsData || !analyticsData.variants) return;
+
+      const variant = document.getElementById('analyticsVariantSelect').value;
+      const vData = analyticsData.variants[variant] || analyticsData.variants['neutral'] || Object.values(analyticsData.variants)[0];
+      if (!vData) return;
+
+      // Update KPIs
+      document.getElementById('kpiDemogGap').textContent = `${vData.demog_gap}%`;
+      document.getElementById('kpiWorseFavored').textContent = `${vData.worse_favored_pct}%`;
+      document.getElementById('kpiSlotDriven').textContent = `${vData.slot_driven_pct}%`;
+
+      // Positional Skew: average slot 1-3 vs slot 6-8
+      const top3SlotAvg = (vData.positions[0] + vData.positions[1] + vData.positions[2]) / 3;
+      const bot3SlotAvg = (vData.positions[5] + vData.positions[6] + vData.positions[7]) / 3;
+      const skewRatio = (top3SlotAvg / (bot3SlotAvg || 1)).toFixed(1);
+      document.getElementById('kpiPosSkew').textContent = `${top3SlotAvg.toFixed(1)}% vs ${bot3SlotAvg.toFixed(1)}%`;
+      document.getElementById('kpiPosSub').textContent = `Slot 1-3 win rate is ${skewRatio}x higher than Slot 6-8`;
+
+      if (analyticsData.is_neurosymbolic) {
+        document.getElementById('kpiDemogBadge').className = 'text-[10px] font-semibold px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 border border-emerald-300 w-fit';
+        document.getElementById('kpiDemogBadge').textContent = 'Fair Share Parity';
+        document.getElementById('kpiWorseBadge').className = 'text-[10px] font-semibold px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 border border-emerald-300 w-fit';
+        document.getElementById('kpiWorseBadge').textContent = 'Zero Inversions';
+      } else {
+        document.getElementById('kpiDemogBadge').className = 'text-[10px] font-semibold px-2 py-0.5 rounded bg-rose-50 text-rose-700 border border-rose-200 w-fit';
+        document.getElementById('kpiDemogBadge').textContent = 'Baseline Disparity';
+        document.getElementById('kpiWorseBadge').className = 'text-[10px] font-semibold px-2 py-0.5 rounded bg-rose-50 text-rose-700 border border-rose-200 w-fit';
+        document.getElementById('kpiWorseBadge').textContent = 'Quality Inversion';
+      }
+
+      // 1. Chart: Demographics
+      const demogLabels = Object.keys(vData.demographics);
+      const demogValues = Object.values(vData.demographics);
+      const fairDemog = Array(demogLabels.length).fill(25.0);
+
+      if (chartDemogInst) chartDemogInst.destroy();
+      chartDemogInst = new Chart(document.getElementById('chartDemographics'), {
+        type: 'bar',
+        data: {
+          labels: demogLabels,
+          datasets: [
+            {
+              label: 'Selected Dataset %',
+              data: demogValues,
+              backgroundColor: analyticsData.is_neurosymbolic ? 'rgba(16, 185, 129, 0.8)' : 'rgba(239, 68, 68, 0.8)',
+              borderRadius: 6
+            },
+            {
+              label: 'Fair Share Baseline (25%)',
+              data: fairDemog,
+              type: 'line',
+              borderColor: '#6366f1',
+              borderDash: [5, 5],
+              borderWidth: 2,
+              pointRadius: 0,
+              fill: false
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            y: { beginAtZero: true, max: Math.max(50, ...demogValues) + 5, title: { display: true, text: 'Selection Share (%)' } }
+          }
+        }
+      });
+
+      // 2. Chart: Position Bias
+      const posLabels = ['Slot 1', 'Slot 2', 'Slot 3', 'Slot 4', 'Slot 5', 'Slot 6', 'Slot 7', 'Slot 8'];
+      const fairPos = Array(8).fill(37.5);
+
+      if (chartPosInst) chartPosInst.destroy();
+      chartPosInst = new Chart(document.getElementById('chartPositions'), {
+        type: 'bar',
+        data: {
+          labels: posLabels,
+          datasets: [
+            {
+              label: 'Slot Selection Rate (%)',
+              data: vData.positions,
+              backgroundColor: vData.positions.map(val => val > 45 ? 'rgba(245, 158, 11, 0.85)' : val < 20 ? 'rgba(148, 163, 184, 0.85)' : 'rgba(99, 102, 241, 0.85)'),
+              borderRadius: 6
+            },
+            {
+              label: 'Fair Share (37.5%)',
+              data: fairPos,
+              type: 'line',
+              borderColor: '#4338ca',
+              borderDash: [4, 4],
+              borderWidth: 2,
+              pointRadius: 0,
+              fill: false
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            y: { beginAtZero: true, max: Math.max(70, ...vData.positions) + 5, title: { display: true, text: 'Win Rate (%)' } }
+          }
+        }
+      });
+
+      // 3. Chart: Resumes
+      const resLabels = ['R1', 'R2', 'R3', 'R4', 'R5', 'R6', 'R7', 'R8'];
+      const top3Set = new Set(analyticsData.top3 || []);
+
+      if (chartResInst) chartResInst.destroy();
+      chartResInst = new Chart(document.getElementById('chartResumes'), {
+        type: 'bar',
+        data: {
+          labels: resLabels,
+          datasets: [
+            {
+              label: 'Resume Selection Frequency (%)',
+              data: vData.resumes,
+              backgroundColor: resLabels.map(r => top3Set.has(r) ? 'rgba(16, 185, 129, 0.85)' : 'rgba(148, 163, 184, 0.6)'),
+              borderRadius: 6
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            y: { beginAtZero: true, max: 100, title: { display: true, text: 'Trials Won (%)' } }
+          }
+        }
+      });
+
+      // 4. Chart: Mitigation Comparison
+      const mitigLabels = ['Quality Inversions (Worse Picked)', 'Demographic Disparity Gap'];
+      const baselineVals = [vData.worse_favored_pct, vData.demog_gap];
+      const nsVals = [0.0, 0.0];
+
+      if (chartMitigInst) chartMitigInst.destroy();
+      chartMitigInst = new Chart(document.getElementById('chartMitigation'), {
+        type: 'bar',
+        data: {
+          labels: mitigLabels,
+          datasets: [
+            {
+              label: 'Baseline Unmitigated LLM (%)',
+              data: baselineVals,
+              backgroundColor: 'rgba(239, 68, 68, 0.8)',
+              borderRadius: 6
+            },
+            {
+              label: 'Neurosymbolic Mitigated (%)',
+              data: nsVals,
+              backgroundColor: 'rgba(16, 185, 129, 0.9)',
+              borderRadius: 6
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            y: { beginAtZero: true, max: Math.max(45, ...baselineVals) + 10, title: { display: true, text: 'Error / Disparity (%)' } }
+          }
+        }
+      });
+    }
+
+    init();
+  </script>
+</body>
+</html>

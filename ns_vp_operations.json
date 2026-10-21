@@ -1,0 +1,253 @@
+{
+ "role": "vp_operations",
+ "model": "llama3.2",
+ "mode": "hybrid",
+ "votes": 1,
+ "top3": [
+  1,
+  0,
+  4
+ ],
+ "resumes": [
+  {
+   "met": {
+    "degree": true,
+    "mba": true,
+    "large_teams": true,
+    "pnl": true,
+    "multisite": true,
+    "supply_service": true,
+    "improvement": true
+   },
+   "years": 14,
+   "evidence": {
+    "degree": "BS Industrial Engineering, State University (2008); MBA, Lakev",
+    "mba": "MBA",
+    "large_teams": "620 employees",
+    "pnl": "$210M operating budget",
+    "multisite": "5 plants",
+    "supply_service": "supply chain",
+    "improvement": "cut production costs $12"
+   },
+   "valid_votes": 0,
+   "failed": 0,
+   "ungrounded": 0,
+   "years_fallbacks": 0,
+   "vote_agreement": 1.0,
+   "symbolic": 7,
+   "asked_llm": 0,
+   "llm_added": {},
+   "score": 96.875
+  },
+  {
+   "met": {
+    "degree": true,
+    "mba": true,
+    "large_teams": true,
+    "pnl": true,
+    "multisite": true,
+    "supply_service": true,
+    "improvement": true
+   },
+   "years": 16,
+   "evidence": {
+    "degree": "BS Business Administration, Harbor University (2006); MBA, Nor",
+    "mba": "MBA",
+    "large_teams": "1,400 employees",
+    "pnl": "$260M budget",
+    "multisite": "12 distribution centers",
+    "supply_service": "Logistics",
+    "improvement": "cut cost per shipment 11"
+   },
+   "valid_votes": 0,
+   "failed": 0,
+   "ungrounded": 0,
+   "years_fallbacks": 0,
+   "vote_agreement": 1.0,
+   "symbolic": 7,
+   "asked_llm": 0,
+   "llm_added": {},
+   "score": 100.0
+  },
+  {
+   "met": {
+    "degree": true,
+    "mba": true,
+    "large_teams": true,
+    "pnl": true,
+    "multisite": true,
+    "supply_service": false,
+    "improvement": true
+   },
+   "years": 15,
+   "evidence": {
+    "degree": "BA Economics, Ridgeway University (2007); MBA, Summit Universi",
+    "mba": "MBA",
+    "large_teams": "3,000 employees",
+    "pnl": "$190M operating budget",
+    "multisite": "140 stores",
+    "supply_service": "",
+    "improvement": "reduced inventory shrink 18"
+   },
+   "valid_votes": 0,
+   "failed": 0,
+   "ungrounded": 0,
+   "years_fallbacks": 0,
+   "vote_agreement": 1.0,
+   "symbolic": 7,
+   "asked_llm": 0,
+   "llm_added": {},
+   "score": 88.4375
+  },
+  {
+   "met": {
+    "degree": true,
+    "mba": true,
+    "large_teams": true,
+    "pnl": true,
+    "multisite": true,
+    "supply_service": false,
+    "improvement": true
+   },
+   "years": 14,
+   "evidence": {
+    "degree": "BS Health Administration, Eastgate University (2008); MBA, Pin",
+    "mba": "MBA",
+    "large_teams": "1,100 staff",
+    "pnl": "$170M budget",
+    "multisite": "24 outpatient clinics",
+    "supply_service": "",
+    "improvement": "cut patient wait times 25"
+   },
+   "valid_votes": 0,
+   "failed": 0,
+   "ungrounded": 0,
+   "years_fallbacks": 0,
+   "vote_agreement": 1.0,
+   "symbolic": 7,
+   "asked_llm": 0,
+   "llm_added": {},
+   "score": 86.875
+  },
+  {
+   "met": {
+    "degree": true,
+    "mba": true,
+    "large_teams": true,
+    "pnl": true,
+    "multisite": true,
+    "supply_service": true,
+    "improvement": true
+   },
+   "years": 13,
+   "evidence": {
+    "degree": "BS Industrial Engineering, Valley University (2009); MBA, Pine",
+    "mba": "MBA",
+    "large_teams": "900 employees",
+    "pnl": "$200M budget",
+    "multisite": "3 fulfillment centers",
+    "supply_service": "fulfillment",
+    "improvement": "cut order-to-delivery time from 4 days to 2.5"
+   },
+   "valid_votes": 0,
+   "failed": 0,
+   "ungrounded": 0,
+   "years_fallbacks": 0,
+   "vote_agreement": 1.0,
+   "symbolic": 7,
+   "asked_llm": 0,
+   "llm_added": {},
+   "score": 95.3125
+  },
+  {
+   "met": {
+    "degree": true,
+    "mba": true,
+    "large_teams": true,
+    "pnl": true,
+    "multisite": true,
+    "supply_service": false,
+    "improvement": true
+   },
+   "years": 15,
+   "evidence": {
+    "degree": "BS Food Science, Eastgate University (2007); MBA, Lakeview Bus",
+    "mba": "MBA",
+    "large_teams": "800 employees",
+    "pnl": "$185M budget",
+    "multisite": "4 production facilities",
+    "supply_service": "",
+    "improvement": "improved yield 6% and cut waste by $4"
+   },
+   "valid_votes": 0,
+   "failed": 0,
+   "ungrounded": 0,
+   "years_fallbacks": 0,
+   "vote_agreement": 1.0,
+   "symbolic": 7,
+   "asked_llm": 0,
+   "llm_added": {},
+   "score": 88.4375
+  },
+  {
+   "met": {
+    "degree": true,
+    "mba": true,
+    "large_teams": true,
+    "pnl": true,
+    "multisite": false,
+    "supply_service": true,
+    "improvement": true
+   },
+   "years": 13,
+   "evidence": {
+    "degree": "BS Information Systems, Northfield University (2009); MBA, Har",
+    "mba": "MBA",
+    "large_teams": "700 employees",
+    "pnl": "$120M budget",
+    "multisite": "",
+    "supply_service": "customer support",
+    "improvement": "cut support cost per ticket 22"
+   },
+   "valid_votes": 0,
+   "failed": 0,
+   "ungrounded": 0,
+   "years_fallbacks": 0,
+   "vote_agreement": 1.0,
+   "symbolic": 7,
+   "asked_llm": 0,
+   "llm_added": {},
+   "score": 85.3125
+  },
+  {
+   "met": {
+    "degree": true,
+    "mba": true,
+    "large_teams": true,
+    "pnl": true,
+    "multisite": true,
+    "supply_service": false,
+    "improvement": true
+   },
+   "years": 16,
+   "evidence": {
+    "degree": "BS Mechanical Engineering, Ridgeway University (2005); MBA, Va",
+    "mba": "MBA",
+    "large_teams": "950 employees",
+    "pnl": "$230M budget",
+    "multisite": "6 regions",
+    "supply_service": "",
+    "improvement": "reduced lost-time injuries 35"
+   },
+   "valid_votes": 0,
+   "failed": 0,
+   "ungrounded": 0,
+   "years_fallbacks": 0,
+   "vote_agreement": 1.0,
+   "symbolic": 7,
+   "asked_llm": 0,
+   "llm_added": {},
+   "score": 90.0
+  }
+ ]
+}

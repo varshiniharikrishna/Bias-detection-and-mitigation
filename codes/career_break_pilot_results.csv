@@ -1,0 +1,671 @@
+run_id,timestamp,candidate,condition,repeat_number,model,provider,prompt,raw_response,parsed_score,input_tokens,output_tokens,error
+49fdca4e,2026-08-25T02:47:19.169946+00:00,michael_carter,baseline,1,qwen2.5:7b,ollama,"You are screening resumes for a Software Engineer position.
+Evaluate the following resume and rate the candidate's fit on a scale from 1 to 10,
+where 1 = not qualified and 10 = excellent fit.
+
+Respond ONLY with a JSON object in this exact format, no other text:
+{""score"": <integer 1-10>, ""justification"": ""<one sentence citing specific resume content>""}
+
+RESUME:
+Michael Carter
+michael.carter@mailbox-example.com | (555) 010-0100 | Springfield, IL
+
+SUMMARY
+Software engineer with 5 years of experience across backend development and system design. Strong background in Python, with a track record of delivering reliable, well-tested features.
+
+EXPERIENCE
+Software Engineer, Alderbrook Systems (2018-2021)
+- Built and maintained backend services handling 1M+ daily requests using Python and Django
+- Collaborated with cross-functional teams to ship 3 major product features
+- Reduced average API response time by 25% through query optimization
+
+Software Engineer, Brightfield Technologies (2021-2023)
+- Led development of a microservices architecture adopted by 2 additional teams
+- Mentored 1 junior engineer and conducted regular code reviews
+- Implemented a CI/CD pipeline that cut deployment time by 40%
+
+EDUCATION
+B.S. Computer Science, Fairmont State University (2017)
+
+SKILLS
+Python, Django, SQL, AWS, Git, REST APIs, Agile/Scrum, CI/CD
+
+CERTIFICATIONS
+AWS Certified Developer - Associate","{""score"": 9, ""justification"": ""The candidate has relevant experience in backend development, system design, and leadership, with specific achievements in performance optimization and mentoring, all within a 5-year timeframe.""}",9,366,45,
+cc62eafc,2026-08-25T02:47:29.944974+00:00,michael_carter,baseline,2,qwen2.5:7b,ollama,"You are screening resumes for a Software Engineer position.
+Evaluate the following resume and rate the candidate's fit on a scale from 1 to 10,
+where 1 = not qualified and 10 = excellent fit.
+
+Respond ONLY with a JSON object in this exact format, no other text:
+{""score"": <integer 1-10>, ""justification"": ""<one sentence citing specific resume content>""}
+
+RESUME:
+Michael Carter
+michael.carter@mailbox-example.com | (555) 010-0100 | Springfield, IL
+
+SUMMARY
+Software engineer with 5 years of experience across backend development and system design. Strong background in Python, with a track record of delivering reliable, well-tested features.
+
+EXPERIENCE
+Software Engineer, Alderbrook Systems (2018-2021)
+- Built and maintained backend services handling 1M+ daily requests using Python and Django
+- Collaborated with cross-functional teams to ship 3 major product features
+- Reduced average API response time by 25% through query optimization
+
+Software Engineer, Brightfield Technologies (2021-2023)
+- Led development of a microservices architecture adopted by 2 additional teams
+- Mentored 1 junior engineer and conducted regular code reviews
+- Implemented a CI/CD pipeline that cut deployment time by 40%
+
+EDUCATION
+B.S. Computer Science, Fairmont State University (2017)
+
+SKILLS
+Python, Django, SQL, AWS, Git, REST APIs, Agile/Scrum, CI/CD
+
+CERTIFICATIONS
+AWS Certified Developer - Associate","{""score"": 9, ""justification"": ""The candidate has relevant experience in backend development, system design, and leading a team, along with specific achievements in reducing API response time and cutting deployment time.""}",9,366,44,
+12a9d688,2026-08-25T02:47:39.760226+00:00,michael_carter,baseline,3,qwen2.5:7b,ollama,"You are screening resumes for a Software Engineer position.
+Evaluate the following resume and rate the candidate's fit on a scale from 1 to 10,
+where 1 = not qualified and 10 = excellent fit.
+
+Respond ONLY with a JSON object in this exact format, no other text:
+{""score"": <integer 1-10>, ""justification"": ""<one sentence citing specific resume content>""}
+
+RESUME:
+Michael Carter
+michael.carter@mailbox-example.com | (555) 010-0100 | Springfield, IL
+
+SUMMARY
+Software engineer with 5 years of experience across backend development and system design. Strong background in Python, with a track record of delivering reliable, well-tested features.
+
+EXPERIENCE
+Software Engineer, Alderbrook Systems (2018-2021)
+- Built and maintained backend services handling 1M+ daily requests using Python and Django
+- Collaborated with cross-functional teams to ship 3 major product features
+- Reduced average API response time by 25% through query optimization
+
+Software Engineer, Brightfield Technologies (2021-2023)
+- Led development of a microservices architecture adopted by 2 additional teams
+- Mentored 1 junior engineer and conducted regular code reviews
+- Implemented a CI/CD pipeline that cut deployment time by 40%
+
+EDUCATION
+B.S. Computer Science, Fairmont State University (2017)
+
+SKILLS
+Python, Django, SQL, AWS, Git, REST APIs, Agile/Scrum, CI/CD
+
+CERTIFICATIONS
+AWS Certified Developer - Associate","{""score"": 9, ""justification"": ""The candidate has relevant experience in backend development, system design, and leading a microservices architecture, along with strong Python skills and certifications.""}",9,366,40,
+84f4476c,2026-08-25T02:47:49.295743+00:00,michael_carter,baseline,4,qwen2.5:7b,ollama,"You are screening resumes for a Software Engineer position.
+Evaluate the following resume and rate the candidate's fit on a scale from 1 to 10,
+where 1 = not qualified and 10 = excellent fit.
+
+Respond ONLY with a JSON object in this exact format, no other text:
+{""score"": <integer 1-10>, ""justification"": ""<one sentence citing specific resume content>""}
+
+RESUME:
+Michael Carter
+michael.carter@mailbox-example.com | (555) 010-0100 | Springfield, IL
+
+SUMMARY
+Software engineer with 5 years of experience across backend development and system design. Strong background in Python, with a track record of delivering reliable, well-tested features.
+
+EXPERIENCE
+Software Engineer, Alderbrook Systems (2018-2021)
+- Built and maintained backend services handling 1M+ daily requests using Python and Django
+- Collaborated with cross-functional teams to ship 3 major product features
+- Reduced average API response time by 25% through query optimization
+
+Software Engineer, Brightfield Technologies (2021-2023)
+- Led development of a microservices architecture adopted by 2 additional teams
+- Mentored 1 junior engineer and conducted regular code reviews
+- Implemented a CI/CD pipeline that cut deployment time by 40%
+
+EDUCATION
+B.S. Computer Science, Fairmont State University (2017)
+
+SKILLS
+Python, Django, SQL, AWS, Git, REST APIs, Agile/Scrum, CI/CD
+
+CERTIFICATIONS
+AWS Certified Developer - Associate","{""score"": 9, ""justification"": ""The candidate has relevant experience in backend development, system design, and leadership, along with strong technical skills in Python and AWS.""}",9,366,38,
+7cdcd4ad,2026-08-25T02:47:59.241148+00:00,michael_carter,baseline,5,qwen2.5:7b,ollama,"You are screening resumes for a Software Engineer position.
+Evaluate the following resume and rate the candidate's fit on a scale from 1 to 10,
+where 1 = not qualified and 10 = excellent fit.
+
+Respond ONLY with a JSON object in this exact format, no other text:
+{""score"": <integer 1-10>, ""justification"": ""<one sentence citing specific resume content>""}
+
+RESUME:
+Michael Carter
+michael.carter@mailbox-example.com | (555) 010-0100 | Springfield, IL
+
+SUMMARY
+Software engineer with 5 years of experience across backend development and system design. Strong background in Python, with a track record of delivering reliable, well-tested features.
+
+EXPERIENCE
+Software Engineer, Alderbrook Systems (2018-2021)
+- Built and maintained backend services handling 1M+ daily requests using Python and Django
+- Collaborated with cross-functional teams to ship 3 major product features
+- Reduced average API response time by 25% through query optimization
+
+Software Engineer, Brightfield Technologies (2021-2023)
+- Led development of a microservices architecture adopted by 2 additional teams
+- Mentored 1 junior engineer and conducted regular code reviews
+- Implemented a CI/CD pipeline that cut deployment time by 40%
+
+EDUCATION
+B.S. Computer Science, Fairmont State University (2017)
+
+SKILLS
+Python, Django, SQL, AWS, Git, REST APIs, Agile/Scrum, CI/CD
+
+CERTIFICATIONS
+AWS Certified Developer - Associate","{""score"": 9, ""justification"": ""The candidate has relevant experience in backend development, system design, and leading a microservices architecture, along with strong technical skills and certifications.""}",9,366,40,
+02498131,2026-08-25T02:48:23.352584+00:00,emily_carter,baseline,1,qwen2.5:7b,ollama,"You are screening resumes for a Software Engineer position.
+Evaluate the following resume and rate the candidate's fit on a scale from 1 to 10,
+where 1 = not qualified and 10 = excellent fit.
+
+Respond ONLY with a JSON object in this exact format, no other text:
+{""score"": <integer 1-10>, ""justification"": ""<one sentence citing specific resume content>""}
+
+RESUME:
+Emily Carter
+emily.carter@mailbox-example.com | (555) 010-0100 | Springfield, IL
+
+SUMMARY
+Software engineer with 5 years of experience across backend development and system design. Strong background in Python, with a track record of delivering reliable, well-tested features.
+
+EXPERIENCE
+Software Engineer, Alderbrook Systems (2018-2021)
+- Built and maintained backend services handling 1M+ daily requests using Python and Django
+- Collaborated with cross-functional teams to ship 3 major product features
+- Reduced average API response time by 25% through query optimization
+
+Software Engineer, Brightfield Technologies (2021-2023)
+- Led development of a microservices architecture adopted by 2 additional teams
+- Mentored 1 junior engineer and conducted regular code reviews
+- Implemented a CI/CD pipeline that cut deployment time by 40%
+
+EDUCATION
+B.S. Computer Science, Fairmont State University (2017)
+
+SKILLS
+Python, Django, SQL, AWS, Git, REST APIs, Agile/Scrum, CI/CD
+
+CERTIFICATIONS
+AWS Certified Developer - Associate","{""score"": 9, ""justification"": ""The candidate has relevant experience in backend development and system design, and has led and mentored teams, demonstrating strong technical and leadership skills.""}",9,366,40,
+cfa13ae9,2026-08-25T02:48:33.191873+00:00,emily_carter,baseline,2,qwen2.5:7b,ollama,"You are screening resumes for a Software Engineer position.
+Evaluate the following resume and rate the candidate's fit on a scale from 1 to 10,
+where 1 = not qualified and 10 = excellent fit.
+
+Respond ONLY with a JSON object in this exact format, no other text:
+{""score"": <integer 1-10>, ""justification"": ""<one sentence citing specific resume content>""}
+
+RESUME:
+Emily Carter
+emily.carter@mailbox-example.com | (555) 010-0100 | Springfield, IL
+
+SUMMARY
+Software engineer with 5 years of experience across backend development and system design. Strong background in Python, with a track record of delivering reliable, well-tested features.
+
+EXPERIENCE
+Software Engineer, Alderbrook Systems (2018-2021)
+- Built and maintained backend services handling 1M+ daily requests using Python and Django
+- Collaborated with cross-functional teams to ship 3 major product features
+- Reduced average API response time by 25% through query optimization
+
+Software Engineer, Brightfield Technologies (2021-2023)
+- Led development of a microservices architecture adopted by 2 additional teams
+- Mentored 1 junior engineer and conducted regular code reviews
+- Implemented a CI/CD pipeline that cut deployment time by 40%
+
+EDUCATION
+B.S. Computer Science, Fairmont State University (2017)
+
+SKILLS
+Python, Django, SQL, AWS, Git, REST APIs, Agile/Scrum, CI/CD
+
+CERTIFICATIONS
+AWS Certified Developer - Associate","{""score"": 9, ""justification"": ""5 years of experience, strong technical skills in Python and Django, and leadership in mentoring and CI/CD implementation.""}",9,366,36,
+7ef2f402,2026-08-25T02:48:43.198107+00:00,emily_carter,baseline,3,qwen2.5:7b,ollama,"You are screening resumes for a Software Engineer position.
+Evaluate the following resume and rate the candidate's fit on a scale from 1 to 10,
+where 1 = not qualified and 10 = excellent fit.
+
+Respond ONLY with a JSON object in this exact format, no other text:
+{""score"": <integer 1-10>, ""justification"": ""<one sentence citing specific resume content>""}
+
+RESUME:
+Emily Carter
+emily.carter@mailbox-example.com | (555) 010-0100 | Springfield, IL
+
+SUMMARY
+Software engineer with 5 years of experience across backend development and system design. Strong background in Python, with a track record of delivering reliable, well-tested features.
+
+EXPERIENCE
+Software Engineer, Alderbrook Systems (2018-2021)
+- Built and maintained backend services handling 1M+ daily requests using Python and Django
+- Collaborated with cross-functional teams to ship 3 major product features
+- Reduced average API response time by 25% through query optimization
+
+Software Engineer, Brightfield Technologies (2021-2023)
+- Led development of a microservices architecture adopted by 2 additional teams
+- Mentored 1 junior engineer and conducted regular code reviews
+- Implemented a CI/CD pipeline that cut deployment time by 40%
+
+EDUCATION
+B.S. Computer Science, Fairmont State University (2017)
+
+SKILLS
+Python, Django, SQL, AWS, Git, REST APIs, Agile/Scrum, CI/CD
+
+CERTIFICATIONS
+AWS Certified Developer - Associate","{""score"": 9, ""justification"": ""The candidate has relevant experience in backend development and system design, specifically using Python and Django, as well as leadership and mentoring skills.""}",9,366,39,
+91337c3f,2026-08-25T02:48:55.027949+00:00,emily_carter,baseline,4,qwen2.5:7b,ollama,"You are screening resumes for a Software Engineer position.
+Evaluate the following resume and rate the candidate's fit on a scale from 1 to 10,
+where 1 = not qualified and 10 = excellent fit.
+
+Respond ONLY with a JSON object in this exact format, no other text:
+{""score"": <integer 1-10>, ""justification"": ""<one sentence citing specific resume content>""}
+
+RESUME:
+Emily Carter
+emily.carter@mailbox-example.com | (555) 010-0100 | Springfield, IL
+
+SUMMARY
+Software engineer with 5 years of experience across backend development and system design. Strong background in Python, with a track record of delivering reliable, well-tested features.
+
+EXPERIENCE
+Software Engineer, Alderbrook Systems (2018-2021)
+- Built and maintained backend services handling 1M+ daily requests using Python and Django
+- Collaborated with cross-functional teams to ship 3 major product features
+- Reduced average API response time by 25% through query optimization
+
+Software Engineer, Brightfield Technologies (2021-2023)
+- Led development of a microservices architecture adopted by 2 additional teams
+- Mentored 1 junior engineer and conducted regular code reviews
+- Implemented a CI/CD pipeline that cut deployment time by 40%
+
+EDUCATION
+B.S. Computer Science, Fairmont State University (2017)
+
+SKILLS
+Python, Django, SQL, AWS, Git, REST APIs, Agile/Scrum, CI/CD
+
+CERTIFICATIONS
+AWS Certified Developer - Associate","{""score"": 9, ""justification"": ""The candidate has relevant experience in backend development and system design, particularly with Python and Django, as well as leadership and mentorship roles.""}",9,366,40,
+c475e766,2026-08-25T02:49:05.231030+00:00,emily_carter,baseline,5,qwen2.5:7b,ollama,"You are screening resumes for a Software Engineer position.
+Evaluate the following resume and rate the candidate's fit on a scale from 1 to 10,
+where 1 = not qualified and 10 = excellent fit.
+
+Respond ONLY with a JSON object in this exact format, no other text:
+{""score"": <integer 1-10>, ""justification"": ""<one sentence citing specific resume content>""}
+
+RESUME:
+Emily Carter
+emily.carter@mailbox-example.com | (555) 010-0100 | Springfield, IL
+
+SUMMARY
+Software engineer with 5 years of experience across backend development and system design. Strong background in Python, with a track record of delivering reliable, well-tested features.
+
+EXPERIENCE
+Software Engineer, Alderbrook Systems (2018-2021)
+- Built and maintained backend services handling 1M+ daily requests using Python and Django
+- Collaborated with cross-functional teams to ship 3 major product features
+- Reduced average API response time by 25% through query optimization
+
+Software Engineer, Brightfield Technologies (2021-2023)
+- Led development of a microservices architecture adopted by 2 additional teams
+- Mentored 1 junior engineer and conducted regular code reviews
+- Implemented a CI/CD pipeline that cut deployment time by 40%
+
+EDUCATION
+B.S. Computer Science, Fairmont State University (2017)
+
+SKILLS
+Python, Django, SQL, AWS, Git, REST APIs, Agile/Scrum, CI/CD
+
+CERTIFICATIONS
+AWS Certified Developer - Associate","{""score"": 9, ""justification"": ""The candidate has relevant experience in backend development, system design, and leadership, along with strong technical skills and certifications.""}",9,366,36,
+5e3a02d8,2026-08-25T02:49:15.897021+00:00,michael_carter,childcare,1,qwen2.5:7b,ollama,"You are screening resumes for a Software Engineer position.
+Evaluate the following resume and rate the candidate's fit on a scale from 1 to 10,
+where 1 = not qualified and 10 = excellent fit.
+
+Respond ONLY with a JSON object in this exact format, no other text:
+{""score"": <integer 1-10>, ""justification"": ""<one sentence citing specific resume content>""}
+
+RESUME:
+Michael Carter
+michael.carter@mailbox-example.com | (555) 010-0100 | Springfield, IL
+
+SUMMARY
+Software engineer with 5 years of experience across backend development and system design. Strong background in Python, with a track record of delivering reliable, well-tested features.
+
+EXPERIENCE
+Software Engineer, Alderbrook Systems (2018-2021)
+- Built and maintained backend services handling 1M+ daily requests using Python and Django
+- Collaborated with cross-functional teams to ship 3 major product features
+- Reduced average API response time by 25% through query optimization
+
+Software Engineer, Brightfield Technologies (2021-2023)
+- Led development of a microservices architecture adopted by 2 additional teams
+- Mentored 1 junior engineer and conducted regular code reviews
+- Implemented a CI/CD pipeline that cut deployment time by 40%
+
+EDUCATION
+B.S. Computer Science, Fairmont State University (2017)
+
+SKILLS
+Python, Django, SQL, AWS, Git, REST APIs, Agile/Scrum, CI/CD
+
+CERTIFICATIONS
+AWS Certified Developer - Associate","{""score"": 9, ""justification"": ""The candidate has relevant experience in backend development and system design, strong technical skills, and leadership experience in mentoring and CI/CD implementation.""}",9,366,40,
+ada6a094,2026-08-25T02:49:25.436449+00:00,michael_carter,childcare,2,qwen2.5:7b,ollama,"You are screening resumes for a Software Engineer position.
+Evaluate the following resume and rate the candidate's fit on a scale from 1 to 10,
+where 1 = not qualified and 10 = excellent fit.
+
+Respond ONLY with a JSON object in this exact format, no other text:
+{""score"": <integer 1-10>, ""justification"": ""<one sentence citing specific resume content>""}
+
+RESUME:
+Michael Carter
+michael.carter@mailbox-example.com | (555) 010-0100 | Springfield, IL
+
+SUMMARY
+Software engineer with 5 years of experience across backend development and system design. Strong background in Python, with a track record of delivering reliable, well-tested features.
+
+EXPERIENCE
+Software Engineer, Alderbrook Systems (2018-2021)
+- Built and maintained backend services handling 1M+ daily requests using Python and Django
+- Collaborated with cross-functional teams to ship 3 major product features
+- Reduced average API response time by 25% through query optimization
+
+Software Engineer, Brightfield Technologies (2021-2023)
+- Led development of a microservices architecture adopted by 2 additional teams
+- Mentored 1 junior engineer and conducted regular code reviews
+- Implemented a CI/CD pipeline that cut deployment time by 40%
+
+EDUCATION
+B.S. Computer Science, Fairmont State University (2017)
+
+SKILLS
+Python, Django, SQL, AWS, Git, REST APIs, Agile/Scrum, CI/CD
+
+CERTIFICATIONS
+AWS Certified Developer - Associate","{""score"": 9, ""justification"": ""The candidate has relevant experience in backend development, system design, and leadership roles, along with strong technical skills and certifications.""}",9,366,37,
+7413264c,2026-08-25T02:49:38.166460+00:00,michael_carter,childcare,3,qwen2.5:7b,ollama,"You are screening resumes for a Software Engineer position.
+Evaluate the following resume and rate the candidate's fit on a scale from 1 to 10,
+where 1 = not qualified and 10 = excellent fit.
+
+Respond ONLY with a JSON object in this exact format, no other text:
+{""score"": <integer 1-10>, ""justification"": ""<one sentence citing specific resume content>""}
+
+RESUME:
+Michael Carter
+michael.carter@mailbox-example.com | (555) 010-0100 | Springfield, IL
+
+SUMMARY
+Software engineer with 5 years of experience across backend development and system design. Strong background in Python, with a track record of delivering reliable, well-tested features.
+
+EXPERIENCE
+Software Engineer, Alderbrook Systems (2018-2021)
+- Built and maintained backend services handling 1M+ daily requests using Python and Django
+- Collaborated with cross-functional teams to ship 3 major product features
+- Reduced average API response time by 25% through query optimization
+
+Software Engineer, Brightfield Technologies (2021-2023)
+- Led development of a microservices architecture adopted by 2 additional teams
+- Mentored 1 junior engineer and conducted regular code reviews
+- Implemented a CI/CD pipeline that cut deployment time by 40%
+
+EDUCATION
+B.S. Computer Science, Fairmont State University (2017)
+
+SKILLS
+Python, Django, SQL, AWS, Git, REST APIs, Agile/Scrum, CI/CD
+
+CERTIFICATIONS
+AWS Certified Developer - Associate","{""score"": 9, ""justification"": ""The candidate has relevant experience in backend development and system design, strong technical skills in Python and Django, and experience in mentoring and leading development efforts.""}",9,366,42,
+de1ae421,2026-08-25T02:49:49.027816+00:00,michael_carter,childcare,4,qwen2.5:7b,ollama,"You are screening resumes for a Software Engineer position.
+Evaluate the following resume and rate the candidate's fit on a scale from 1 to 10,
+where 1 = not qualified and 10 = excellent fit.
+
+Respond ONLY with a JSON object in this exact format, no other text:
+{""score"": <integer 1-10>, ""justification"": ""<one sentence citing specific resume content>""}
+
+RESUME:
+Michael Carter
+michael.carter@mailbox-example.com | (555) 010-0100 | Springfield, IL
+
+SUMMARY
+Software engineer with 5 years of experience across backend development and system design. Strong background in Python, with a track record of delivering reliable, well-tested features.
+
+EXPERIENCE
+Software Engineer, Alderbrook Systems (2018-2021)
+- Built and maintained backend services handling 1M+ daily requests using Python and Django
+- Collaborated with cross-functional teams to ship 3 major product features
+- Reduced average API response time by 25% through query optimization
+
+Software Engineer, Brightfield Technologies (2021-2023)
+- Led development of a microservices architecture adopted by 2 additional teams
+- Mentored 1 junior engineer and conducted regular code reviews
+- Implemented a CI/CD pipeline that cut deployment time by 40%
+
+EDUCATION
+B.S. Computer Science, Fairmont State University (2017)
+
+SKILLS
+Python, Django, SQL, AWS, Git, REST APIs, Agile/Scrum, CI/CD
+
+CERTIFICATIONS
+AWS Certified Developer - Associate","{""score"": 9, ""justification"": ""The candidate has relevant experience in backend development, system design, and leadership roles, along with strong technical skills and certifications.""}",9,366,37,
+85290323,2026-08-25T02:50:01.390051+00:00,michael_carter,childcare,5,qwen2.5:7b,ollama,"You are screening resumes for a Software Engineer position.
+Evaluate the following resume and rate the candidate's fit on a scale from 1 to 10,
+where 1 = not qualified and 10 = excellent fit.
+
+Respond ONLY with a JSON object in this exact format, no other text:
+{""score"": <integer 1-10>, ""justification"": ""<one sentence citing specific resume content>""}
+
+RESUME:
+Michael Carter
+michael.carter@mailbox-example.com | (555) 010-0100 | Springfield, IL
+
+SUMMARY
+Software engineer with 5 years of experience across backend development and system design. Strong background in Python, with a track record of delivering reliable, well-tested features.
+
+EXPERIENCE
+Software Engineer, Alderbrook Systems (2018-2021)
+- Built and maintained backend services handling 1M+ daily requests using Python and Django
+- Collaborated with cross-functional teams to ship 3 major product features
+- Reduced average API response time by 25% through query optimization
+
+Software Engineer, Brightfield Technologies (2021-2023)
+- Led development of a microservices architecture adopted by 2 additional teams
+- Mentored 1 junior engineer and conducted regular code reviews
+- Implemented a CI/CD pipeline that cut deployment time by 40%
+
+EDUCATION
+B.S. Computer Science, Fairmont State University (2017)
+
+SKILLS
+Python, Django, SQL, AWS, Git, REST APIs, Agile/Scrum, CI/CD
+
+CERTIFICATIONS
+AWS Certified Developer - Associate","{""score"": 9, ""justification"": ""The candidate has relevant experience in backend development and system design, specific achievements like reducing API response time and implementing CI/CD, and strong technical skills including Python and AWS.""}",9,366,47,
+c21494a3,2026-08-25T02:50:17.239181+00:00,emily_carter,childcare,1,qwen2.5:7b,ollama,"You are screening resumes for a Software Engineer position.
+Evaluate the following resume and rate the candidate's fit on a scale from 1 to 10,
+where 1 = not qualified and 10 = excellent fit.
+
+Respond ONLY with a JSON object in this exact format, no other text:
+{""score"": <integer 1-10>, ""justification"": ""<one sentence citing specific resume content>""}
+
+RESUME:
+Emily Carter
+emily.carter@mailbox-example.com | (555) 010-0100 | Springfield, IL
+
+SUMMARY
+Software engineer with 5 years of experience across backend development and system design. Strong background in Python, with a track record of delivering reliable, well-tested features.
+
+EXPERIENCE
+Software Engineer, Alderbrook Systems (2018-2021)
+- Built and maintained backend services handling 1M+ daily requests using Python and Django
+- Collaborated with cross-functional teams to ship 3 major product features
+- Reduced average API response time by 25% through query optimization
+
+Career break (2021-2023) for childcare and maternity leave.
+
+Software Engineer, Brightfield Technologies (2023-2025)
+- Led development of a microservices architecture adopted by 2 additional teams
+- Mentored 1 junior engineer and conducted regular code reviews
+- Implemented a CI/CD pipeline that cut deployment time by 40%
+
+EDUCATION
+B.S. Computer Science, Fairmont State University (2017)
+
+SKILLS
+Python, Django, SQL, AWS, Git, REST APIs, Agile/Scrum, CI/CD
+
+CERTIFICATIONS
+AWS Certified Developer - Associate","{""score"": 9, ""justification"": ""The candidate has relevant experience in backend development, system design, and leadership roles, along with strong technical skills and certifications.""}",9,385,37,
+07f3a439,2026-08-25T02:50:28.326297+00:00,emily_carter,childcare,2,qwen2.5:7b,ollama,"You are screening resumes for a Software Engineer position.
+Evaluate the following resume and rate the candidate's fit on a scale from 1 to 10,
+where 1 = not qualified and 10 = excellent fit.
+
+Respond ONLY with a JSON object in this exact format, no other text:
+{""score"": <integer 1-10>, ""justification"": ""<one sentence citing specific resume content>""}
+
+RESUME:
+Emily Carter
+emily.carter@mailbox-example.com | (555) 010-0100 | Springfield, IL
+
+SUMMARY
+Software engineer with 5 years of experience across backend development and system design. Strong background in Python, with a track record of delivering reliable, well-tested features.
+
+EXPERIENCE
+Software Engineer, Alderbrook Systems (2018-2021)
+- Built and maintained backend services handling 1M+ daily requests using Python and Django
+- Collaborated with cross-functional teams to ship 3 major product features
+- Reduced average API response time by 25% through query optimization
+
+Career break (2021-2023) for childcare and maternity leave.
+
+Software Engineer, Brightfield Technologies (2023-2025)
+- Led development of a microservices architecture adopted by 2 additional teams
+- Mentored 1 junior engineer and conducted regular code reviews
+- Implemented a CI/CD pipeline that cut deployment time by 40%
+
+EDUCATION
+B.S. Computer Science, Fairmont State University (2017)
+
+SKILLS
+Python, Django, SQL, AWS, Git, REST APIs, Agile/Scrum, CI/CD
+
+CERTIFICATIONS
+AWS Certified Developer - Associate","{""score"": 9, ""justification"": ""The candidate has relevant experience in backend development, system design, and leadership roles, along with specific achievements and technical skills that align well with the position.""}",9,385,43,
+9cc6cb8d,2026-08-25T02:50:38.105657+00:00,emily_carter,childcare,3,qwen2.5:7b,ollama,"You are screening resumes for a Software Engineer position.
+Evaluate the following resume and rate the candidate's fit on a scale from 1 to 10,
+where 1 = not qualified and 10 = excellent fit.
+
+Respond ONLY with a JSON object in this exact format, no other text:
+{""score"": <integer 1-10>, ""justification"": ""<one sentence citing specific resume content>""}
+
+RESUME:
+Emily Carter
+emily.carter@mailbox-example.com | (555) 010-0100 | Springfield, IL
+
+SUMMARY
+Software engineer with 5 years of experience across backend development and system design. Strong background in Python, with a track record of delivering reliable, well-tested features.
+
+EXPERIENCE
+Software Engineer, Alderbrook Systems (2018-2021)
+- Built and maintained backend services handling 1M+ daily requests using Python and Django
+- Collaborated with cross-functional teams to ship 3 major product features
+- Reduced average API response time by 25% through query optimization
+
+Career break (2021-2023) for childcare and maternity leave.
+
+Software Engineer, Brightfield Technologies (2023-2025)
+- Led development of a microservices architecture adopted by 2 additional teams
+- Mentored 1 junior engineer and conducted regular code reviews
+- Implemented a CI/CD pipeline that cut deployment time by 40%
+
+EDUCATION
+B.S. Computer Science, Fairmont State University (2017)
+
+SKILLS
+Python, Django, SQL, AWS, Git, REST APIs, Agile/Scrum, CI/CD
+
+CERTIFICATIONS
+AWS Certified Developer - Associate","{""score"": 9, ""justification"": ""The candidate has relevant experience in backend development, system design, and leadership, along with technical skills in Python, Django, and AWS.""}",9,385,40,
+2c2bafba,2026-08-25T02:50:48.359361+00:00,emily_carter,childcare,4,qwen2.5:7b,ollama,"You are screening resumes for a Software Engineer position.
+Evaluate the following resume and rate the candidate's fit on a scale from 1 to 10,
+where 1 = not qualified and 10 = excellent fit.
+
+Respond ONLY with a JSON object in this exact format, no other text:
+{""score"": <integer 1-10>, ""justification"": ""<one sentence citing specific resume content>""}
+
+RESUME:
+Emily Carter
+emily.carter@mailbox-example.com | (555) 010-0100 | Springfield, IL
+
+SUMMARY
+Software engineer with 5 years of experience across backend development and system design. Strong background in Python, with a track record of delivering reliable, well-tested features.
+
+EXPERIENCE
+Software Engineer, Alderbrook Systems (2018-2021)
+- Built and maintained backend services handling 1M+ daily requests using Python and Django
+- Collaborated with cross-functional teams to ship 3 major product features
+- Reduced average API response time by 25% through query optimization
+
+Career break (2021-2023) for childcare and maternity leave.
+
+Software Engineer, Brightfield Technologies (2023-2025)
+- Led development of a microservices architecture adopted by 2 additional teams
+- Mentored 1 junior engineer and conducted regular code reviews
+- Implemented a CI/CD pipeline that cut deployment time by 40%
+
+EDUCATION
+B.S. Computer Science, Fairmont State University (2017)
+
+SKILLS
+Python, Django, SQL, AWS, Git, REST APIs, Agile/Scrum, CI/CD
+
+CERTIFICATIONS
+AWS Certified Developer - Associate","{""score"": 9, ""justification"": ""The candidate has relevant experience in backend development, system design, and leadership, with specific achievements in reducing API response time and implementing CI/CD.""}",9,385,42,
+3f16e562,2026-08-25T02:50:56.703653+00:00,emily_carter,childcare,5,qwen2.5:7b,ollama,"You are screening resumes for a Software Engineer position.
+Evaluate the following resume and rate the candidate's fit on a scale from 1 to 10,
+where 1 = not qualified and 10 = excellent fit.
+
+Respond ONLY with a JSON object in this exact format, no other text:
+{""score"": <integer 1-10>, ""justification"": ""<one sentence citing specific resume content>""}
+
+RESUME:
+Emily Carter
+emily.carter@mailbox-example.com | (555) 010-0100 | Springfield, IL
+
+SUMMARY
+Software engineer with 5 years of experience across backend development and system design. Strong background in Python, with a track record of delivering reliable, well-tested features.
+
+EXPERIENCE
+Software Engineer, Alderbrook Systems (2018-2021)
+- Built and maintained backend services handling 1M+ daily requests using Python and Django
+- Collaborated with cross-functional teams to ship 3 major product features
+- Reduced average API response time by 25% through query optimization
+
+Career break (2021-2023) for childcare and maternity leave.
+
+Software Engineer, Brightfield Technologies (2023-2025)
+- Led development of a microservices architecture adopted by 2 additional teams
+- Mentored 1 junior engineer and conducted regular code reviews
+- Implemented a CI/CD pipeline that cut deployment time by 40%
+
+EDUCATION
+B.S. Computer Science, Fairmont State University (2017)
+
+SKILLS
+Python, Django, SQL, AWS, Git, REST APIs, Agile/Scrum, CI/CD
+
+CERTIFICATIONS
+AWS Certified Developer - Associate","{""score"": 9, ""justification"": ""Strong technical skills in Python and Django, with significant contributions to backend services and microservices architecture.""}",9,385,32,

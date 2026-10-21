@@ -1,0 +1,253 @@
+{
+ "role": "warehouse",
+ "model": "llama3.2",
+ "mode": "hybrid",
+ "votes": 1,
+ "top3": [
+  0,
+  4,
+  1
+ ],
+ "resumes": [
+  {
+   "met": {
+    "education": true,
+    "equipment": true,
+    "safety": true,
+    "inventory": true,
+    "picking": true,
+    "accuracy": true,
+    "team": true
+   },
+   "years": 2,
+   "evidence": {
+    "education": "High School Diploma",
+    "equipment": "pallet jacks",
+    "safety": "OSHA",
+    "inventory": "scann",
+    "picking": "pick",
+    "accuracy": "about 150 orders",
+    "team": "targets"
+   },
+   "valid_votes": 0,
+   "failed": 0,
+   "ungrounded": 0,
+   "years_fallbacks": 0,
+   "vote_agreement": 1.0,
+   "symbolic": 7,
+   "asked_llm": 0,
+   "llm_added": {},
+   "score": 91.66666666666666
+  },
+  {
+   "met": {
+    "education": true,
+    "equipment": true,
+    "safety": true,
+    "inventory": false,
+    "picking": true,
+    "accuracy": true,
+    "team": false
+   },
+   "years": 3,
+   "evidence": {
+    "education": "High School Diploma",
+    "equipment": "Forklift",
+    "safety": "safety",
+    "inventory": "",
+    "picking": "load",
+    "accuracy": "40 trucks",
+    "team": ""
+   },
+   "valid_votes": 1,
+   "failed": 0,
+   "ungrounded": 0,
+   "years_fallbacks": 0,
+   "vote_agreement": 1.0,
+   "symbolic": 6,
+   "asked_llm": 1,
+   "llm_added": {},
+   "score": 80.0
+  },
+  {
+   "met": {
+    "education": true,
+    "equipment": false,
+    "safety": true,
+    "inventory": true,
+    "picking": true,
+    "accuracy": true,
+    "team": true
+   },
+   "years": 1,
+   "evidence": {
+    "education": "High School Diploma",
+    "equipment": "",
+    "safety": "OSHA",
+    "inventory": "inventory",
+    "picking": "Pack",
+    "accuracy": "120 orders",
+    "team": "helped train"
+   },
+   "valid_votes": 0,
+   "failed": 0,
+   "ungrounded": 0,
+   "years_fallbacks": 0,
+   "vote_agreement": 1.0,
+   "symbolic": 7,
+   "asked_llm": 0,
+   "llm_added": {},
+   "score": 68.33333333333333
+  },
+  {
+   "met": {
+    "education": true,
+    "equipment": false,
+    "safety": true,
+    "inventory": true,
+    "picking": true,
+    "accuracy": true,
+    "team": false
+   },
+   "years": 2,
+   "evidence": {
+    "education": "GED",
+    "equipment": "",
+    "safety": "OSHA",
+    "inventory": "Inventory",
+    "picking": "ship",
+    "accuracy": "98%",
+    "team": ""
+   },
+   "valid_votes": 1,
+   "failed": 0,
+   "ungrounded": 0,
+   "years_fallbacks": 0,
+   "vote_agreement": 1.0,
+   "symbolic": 6,
+   "asked_llm": 1,
+   "llm_added": {},
+   "score": 66.66666666666666
+  },
+  {
+   "met": {
+    "education": true,
+    "equipment": true,
+    "safety": false,
+    "inventory": false,
+    "picking": true,
+    "accuracy": true,
+    "team": true
+   },
+   "years": 3,
+   "evidence": {
+    "education": "High School Diploma",
+    "equipment": "Forklift",
+    "safety": "",
+    "inventory": "",
+    "picking": "Ship",
+    "accuracy": "about 200 parcels",
+    "team": "targets"
+   },
+   "valid_votes": 0,
+   "failed": 0,
+   "ungrounded": 0,
+   "years_fallbacks": 0,
+   "vote_agreement": 1.0,
+   "symbolic": 7,
+   "asked_llm": 0,
+   "llm_added": {},
+   "score": 80.0
+  },
+  {
+   "met": {
+    "education": true,
+    "equipment": false,
+    "safety": true,
+    "inventory": false,
+    "picking": true,
+    "accuracy": false,
+    "team": true
+   },
+   "years": 2,
+   "evidence": {
+    "education": "High School Diploma",
+    "equipment": "",
+    "safety": "safety",
+    "inventory": "",
+    "picking": "Pick",
+    "accuracy": "",
+    "team": "targets"
+   },
+   "valid_votes": 0,
+   "failed": 0,
+   "ungrounded": 0,
+   "years_fallbacks": 0,
+   "vote_agreement": 1.0,
+   "symbolic": 7,
+   "asked_llm": 0,
+   "llm_added": {},
+   "score": 56.666666666666664
+  },
+  {
+   "met": {
+    "education": true,
+    "equipment": true,
+    "safety": true,
+    "inventory": false,
+    "picking": true,
+    "accuracy": false,
+    "team": true
+   },
+   "years": 3,
+   "evidence": {
+    "education": "High School Diploma",
+    "equipment": "pallet jacks",
+    "safety": "lockout",
+    "inventory": "",
+    "picking": "Pack",
+    "accuracy": "",
+    "team": "teamwork"
+   },
+   "valid_votes": 0,
+   "failed": 0,
+   "ungrounded": 0,
+   "years_fallbacks": 0,
+   "vote_agreement": 1.0,
+   "symbolic": 7,
+   "asked_llm": 0,
+   "llm_added": {},
+   "score": 80.0
+  },
+  {
+   "met": {
+    "education": true,
+    "equipment": false,
+    "safety": true,
+    "inventory": true,
+    "picking": true,
+    "accuracy": false,
+    "team": false
+   },
+   "years": 2,
+   "evidence": {
+    "education": "High School Diploma",
+    "equipment": "",
+    "safety": "OSHA",
+    "inventory": "inventory",
+    "picking": "pick",
+    "accuracy": "",
+    "team": ""
+   },
+   "valid_votes": 1,
+   "failed": 0,
+   "ungrounded": 0,
+   "years_fallbacks": 0,
+   "vote_agreement": 1.0,
+   "symbolic": 6,
+   "asked_llm": 1,
+   "llm_added": {},
+   "score": 56.666666666666664
+  }
+ ]
+}

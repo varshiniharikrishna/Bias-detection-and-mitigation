@@ -1,0 +1,54 @@
+[
+    {
+        "resume_id": "R001",
+        "name": "Jordan Reed",
+        "job_role": "Software Engineer",
+        "education": "B.Tech Computer Science",
+        "cgpa": 8.9,
+        "experience_years": 2,
+        "skills": [
+            "Python",
+            "SQL",
+            "AWS",
+            "Flutter"
+        ],
+        "projects": [
+            "Inventory Management System",
+            "Cloud Expense Tracker"
+        ]
+    },
+    {
+        "resume_id": "R002",
+        "name": "Casey Morgan",
+        "job_role": "Data Analyst",
+        "education": "B.Tech Information Technology",
+        "cgpa": 8.7,
+        "experience_years": 1,
+        "skills": [
+            "Python",
+            "Power BI",
+            "SQL"
+        ],
+        "projects": [
+            "Sales Dashboard",
+            "Customer Segmentation"
+        ]
+    },
+    {
+        "resume_id": "R003",
+        "name": "Taylor Brooks",
+        "job_role": "Cybersecurity Analyst",
+        "education": "B.Tech Cyber Security",
+        "cgpa": 9.1,
+        "experience_years": 2,
+        "skills": [
+            "Wireshark",
+            "Linux",
+            "Python"
+        ],
+        "projects": [
+            "Network Intrusion Detection",
+            "Security Audit Tool"
+        ]
+    }
+]

@@ -1,0 +1,161 @@
+name,intended,trial,mode,gender_raw,race_raw,gender,race,p_black,p_white,p_hispanic,p_asian,p_other,p_male,p_female,response
+Juan Gonzalez,Hispanic M,7,guess,Male,Hispanic,Male,Hispanic,,,,,,,,Gender: Male | Race: Hispanic
+Jose Hernandez,Hispanic M,15,guess,Male,Latin American (Hispanic or Mexican),Male,Hispanic,,,,,,,,Gender: Male | Race: Latin American (Hispanic or Mexican)
+Scott Olson,White M,18,guess,Male,White/Caucasian,Male,White,,,,,,,,Gender: Male | Race: White/Caucasian
+Gary Meyer,White M,8,guess,Male,Caucasian,Male,White,,,,,,,,Gender: Male |  | Race: Caucasian
+Gary Meyer,White M,7,guess,Male,White,Male,White,,,,,,,,Gender: Male | Race: White
+Ana Gonzalez,Hispanic F,1,guess,Female,Latinx or Hispanic,Female,Hispanic,,,,,,,,Gender: Female | Race: Latinx or Hispanic
+Maria Hernandez,Hispanic F,9,guess,Female,Hispanic/Latina,Female,Hispanic,,,,,,,,Gender: Female |  | Race: Hispanic/Latina
+Gary Meyer,White M,6,guess,Male,White/Caucasian,Male,White,,,,,,,,Gender: Male | Race: White/Caucasian
+Maria Hernandez,Hispanic F,6,guess,Female,Latina,Female,Hispanic,,,,,,,,Gender: Female | Race: Latina
+Maria Hernandez,Hispanic F,15,guess,Female,Latina or Hispanic,Female,Hispanic,,,,,,,,Gender: Female | Race: Latina or Hispanic
+Juan Gonzalez,Hispanic M,4,guess,Male,Hispanic/Latino,Male,Hispanic,,,,,,,,Gender: Male | Race: Hispanic/Latino
+Susan Olson,White F,11,guess,Female,White,Female,White,,,,,,,,Gender: Female | Race: White
+Maria Hernandez,Hispanic F,20,guess,Female,Latina,Female,Hispanic,,,,,,,,Gender: Female | Race: Latina
+Maria Hernandez,Hispanic F,7,guess,Female,Hispanic,Female,Hispanic,,,,,,,,Gender: Female | Race: Hispanic
+Gary Meyer,White M,17,guess,Male,White,Male,White,,,,,,,,Gender: Male | Race: White
+Kathleen Meyer,White F,17,guess,Female,White,Female,White,,,,,,,,Gender: Female | Race: White
+Gary Meyer,White M,13,guess,Male,White,Male,White,,,,,,,,Gender: Male | Race: White
+Ana Gonzalez,Hispanic F,3,guess,Female,Latina,Female,Hispanic,,,,,,,,Gender: Female | Race: Latina
+Maria Hernandez,Hispanic F,5,guess,Female,Hispanic,Female,Hispanic,,,,,,,,Gender: Female | Race: Hispanic
+Maria Hernandez,Hispanic F,1,guess,Female,Latina,Female,Hispanic,,,,,,,,Gender: Female | Race: Latina
+Gary Meyer,White M,12,guess,Male,White,Male,White,,,,,,,,Gender: Male |  | Race: White
+Gary Meyer,White M,16,guess,Male,White,Male,White,,,,,,,,Gender: Male | Race: White
+Maria Hernandez,Hispanic F,8,guess,Female,Hispanic/Latina,Female,Hispanic,,,,,,,,Gender: Female | Race: Hispanic/Latina
+Juan Gonzalez,Hispanic M,2,guess,Male,Latin American (likely Hispanic or Mexican),Male,Hispanic,,,,,,,,Gender: Male | Race: Latin American (likely Hispanic or Mexican)
+Scott Olson,White M,13,guess,Male,White,Male,White,,,,,,,,Gender: Male |  | Race: White
+Juan Gonzalez,Hispanic M,18,guess,Male,Latin American,Male,Hispanic,,,,,,,,Gender: Male | Race: Latin American
+Scott Olson,White M,1,guess,Male,White,Male,White,,,,,,,,Gender: Male | Race: White
+Maria Hernandez,Hispanic F,4,guess,Female,Latina,Female,Hispanic,,,,,,,,Gender: Female | Race: Latina
+Kathleen Meyer,White F,16,guess,Female,White/Caucasian,Female,White,,,,,,,,Gender: Female | Race: White/Caucasian
+Kathleen Meyer,White F,19,guess,Female,White,Female,White,,,,,,,,Gender: Female | Race: White
+Ana Gonzalez,Hispanic F,10,guess,Female,Hispanic/Latina,Female,Hispanic,,,,,,,,Gender: Female |  | Race: Hispanic/Latina
+Gary Meyer,White M,9,guess,Male,White,Male,White,,,,,,,,Gender: Male |  | Race: White
+Juan Gonzalez,Hispanic M,11,guess,Male,Hispanic/Latino,Male,Hispanic,,,,,,,,Gender: Male | Race: Hispanic/Latino
+Susan Olson,White F,17,guess,Female,White/Caucasian,Female,White,,,,,,,,Gender: Female | Race: White/Caucasian
+Gary Meyer,White M,19,guess,Male,White,Male,White,,,,,,,,Gender: Male | Race: White
+Kathleen Meyer,White F,12,guess,Female,White/Caucasian,Female,White,,,,,,,,Gender: Female | Race: White/Caucasian
+Jose Hernandez,Hispanic M,16,guess,Male,Hispanic/Latino,Male,Hispanic,,,,,,,,Gender: Male | Race: Hispanic/Latino
+Gary Meyer,White M,3,guess,Male,White,Male,White,,,,,,,,Gender: Male | Race: White
+Scott Olson,White M,4,guess,Male,White,Male,White,,,,,,,,Gender: Male | Race: White
+Scott Olson,White M,16,guess,Male,White,Male,White,,,,,,,,Gender: Male | Race: White
+Susan Olson,White F,1,guess,Female,White/Caucasian,Female,White,,,,,,,,Gender: Female | Race: White/Caucasian
+Ana Gonzalez,Hispanic F,16,guess,Female,Hispanic/Latin American,Female,Hispanic,,,,,,,,Gender: Female | Race: Hispanic/Latin American
+Maria Hernandez,Hispanic F,17,guess,Female,Latinx or Hispanic,Female,Hispanic,,,,,,,,Gender: Female | Race: Latinx or Hispanic
+Juan Gonzalez,Hispanic M,10,guess,Male,Hispanic/Latino,Male,Hispanic,,,,,,,,Gender: Male | Race: Hispanic/Latino
+Ana Gonzalez,Hispanic F,14,guess,Female,Latina,Female,Hispanic,,,,,,,,Gender: Female | Race: Latina
+Juan Gonzalez,Hispanic M,9,guess,Male,Latin American (specifically Hispanic or Latino),Male,Hispanic,,,,,,,,Gender: Male |  | Race: Latin American (specifically Hispanic or Latino)
+Kathleen Meyer,White F,8,guess,Female,White/Caucasian,Female,White,,,,,,,,Gender: Female | Race: White/Caucasian
+Gary Meyer,White M,18,guess,Male,White,Male,White,,,,,,,,Gender: Male | Race: White
+Ana Gonzalez,Hispanic F,6,guess,Female,Latina,Female,Hispanic,,,,,,,,Gender: Female | Race: Latina
+Jose Hernandez,Hispanic M,14,guess,Male,Hispanic/Latino,Male,Hispanic,,,,,,,,Gender: Male | Race: Hispanic/Latino
+Kathleen Meyer,White F,13,guess,Female,White,Female,White,,,,,,,,Gender: Female | Race: White
+Juan Gonzalez,Hispanic M,1,guess,Male,Latino/Hispanic,Male,Hispanic,,,,,,,,Gender: Male | Race: Latino/Hispanic
+Ana Gonzalez,Hispanic F,9,guess,Female,Hispanic/Latina,Female,Hispanic,,,,,,,,Gender: Female | Race: Hispanic/Latina
+Jose Hernandez,Hispanic M,11,guess,Male,Latin American/ Hispanic,Male,Hispanic,,,,,,,,Gender: Male | Race: Latin American/ Hispanic
+Kathleen Meyer,White F,20,guess,Female,White/Caucasian,Female,White,,,,,,,,Gender: Female | Race: White/Caucasian
+Kathleen Meyer,White F,9,guess,Female,White,Female,White,,,,,,,,Gender: Female | Race: White
+Ana Gonzalez,Hispanic F,5,guess,Female,Latina,Female,Hispanic,,,,,,,,Gender: Female | Race: Latina
+Ana Gonzalez,Hispanic F,7,guess,Female,Latina or Hispanic,Female,Hispanic,,,,,,,,Gender: Female | Race: Latina or Hispanic
+Jose Hernandez,Hispanic M,8,guess,Male,Hispanic/Latino,Male,Hispanic,,,,,,,,Gender: Male | Race: Hispanic/Latino
+Maria Hernandez,Hispanic F,16,guess,Female,Latinx/Hispanic,Female,Hispanic,,,,,,,,Gender: Female | Race: Latinx/Hispanic
+Scott Olson,White M,6,guess,Male,White,Male,White,,,,,,,,Gender: Male | Race: White
+Susan Olson,White F,18,guess,Female,White,Female,White,,,,,,,,Gender: Female |  | Race: White
+Gary Meyer,White M,4,guess,Male,White,Male,White,,,,,,,,Gender: Male | Race: White
+Juan Gonzalez,Hispanic M,6,guess,Male,Hispanic/Latino,Male,Hispanic,,,,,,,,Gender: Male | Race: Hispanic/Latino
+Susan Olson,White F,4,guess,Female,White/Caucasian,Female,White,,,,,,,,Gender: Female | Race: White/Caucasian
+Scott Olson,White M,7,guess,Male,White/Caucasian,Male,White,,,,,,,,Gender: Male | Race: White/Caucasian
+Juan Gonzalez,Hispanic M,3,guess,Male,Hispanic/Latino,Male,Hispanic,,,,,,,,Gender: Male | Race: Hispanic/Latino
+Maria Hernandez,Hispanic F,19,guess,Female,Hispanic/Latina,Female,Hispanic,,,,,,,,Gender: Female | Race: Hispanic/Latina
+Juan Gonzalez,Hispanic M,8,guess,Male,Hispanic/Latino,Male,Hispanic,,,,,,,,Gender: Male | Race: Hispanic/Latino
+Ana Gonzalez,Hispanic F,2,guess,Female,Latina,Female,Hispanic,,,,,,,,Gender: Female | Race: Latina
+Ana Gonzalez,Hispanic F,11,guess,Female,Hispanic,Female,Hispanic,,,,,,,,Gender: Female | Race: Hispanic
+Kathleen Meyer,White F,10,guess,Female,White,Female,White,,,,,,,,Gender: Female | Race: White
+Scott Olson,White M,8,guess,Male,White,Male,White,,,,,,,,Gender: Male | Race: White
+Jose Hernandez,Hispanic M,6,guess,Male,Hispanic/Latino,Male,Hispanic,,,,,,,,Gender: Male | Race: Hispanic/Latino
+Susan Olson,White F,13,guess,Female,White,Female,White,,,,,,,,Gender: Female |  | Race: White
+Jose Hernandez,Hispanic M,13,guess,Male,Hispanic/Latin American,Male,Hispanic,,,,,,,,Gender: Male | Race: Hispanic/Latin American
+Kathleen Meyer,White F,3,guess,Female,White,Female,White,,,,,,,,Gender: Female | Race: White
+Juan Gonzalez,Hispanic M,13,guess,Male,Hispanic/Latino,Male,Hispanic,,,,,,,,Gender: Male | Race: Hispanic/Latino
+Kathleen Meyer,White F,15,guess,Female,Caucasian,Female,White,,,,,,,,Gender: Female | Race: Caucasian
+Gary Meyer,White M,10,guess,Male,White,Male,White,,,,,,,,Gender: Male | Race: White
+Ana Gonzalez,Hispanic F,20,guess,Female,Hispanic,Female,Hispanic,,,,,,,,Gender: Female | Race: Hispanic
+Maria Hernandez,Hispanic F,18,guess,Female,Latina,Female,Hispanic,,,,,,,,Gender: Female | Race: Latina
+Scott Olson,White M,2,guess,Male,White,Male,White,,,,,,,,Gender: Male | Race: White
+Maria Hernandez,Hispanic F,14,guess,Female,Hispanic/Latina,Female,Hispanic,,,,,,,,Gender: Female | Race: Hispanic/Latina
+Scott Olson,White M,14,guess,Male,White,Male,White,,,,,,,,Gender: Male | Race: White
+Kathleen Meyer,White F,2,guess,Female,White,Female,White,,,,,,,,Gender: Female | Race: White
+Jose Hernandez,Hispanic M,4,guess,Male,Latino,Male,Hispanic,,,,,,,,Gender: Male | Race: Latino
+Susan Olson,White F,8,guess,Female,Caucasian,Female,White,,,,,,,,Gender: Female | Race: Caucasian
+Ana Gonzalez,Hispanic F,17,guess,Female,Latina,Female,Hispanic,,,,,,,,Gender: Female |  | Race: Latina
+Gary Meyer,White M,1,guess,Male,White,Male,White,,,,,,,,Gender: Male | Race: White
+Gary Meyer,White M,14,guess,Male,White/Caucasian,Male,White,,,,,,,,Gender: Male | Race: White/Caucasian
+Jose Hernandez,Hispanic M,5,guess,Male,Hispanic/Latino,Male,Hispanic,,,,,,,,Gender: Male | Race: Hispanic/Latino
+Juan Gonzalez,Hispanic M,14,guess,Male,Hispanic,Male,Hispanic,,,,,,,,Gender: Male | Race: Hispanic
+Susan Olson,White F,19,guess,Female,White/Caucasian,Female,White,,,,,,,,Gender: Female | Race: White/Caucasian
+Susan Olson,White F,6,guess,Female,White,Female,White,,,,,,,,Gender: Female | Race: White
+Ana Gonzalez,Hispanic F,18,guess,Female,Hispanic,Female,Hispanic,,,,,,,,Gender: Female | Race: Hispanic
+Ana Gonzalez,Hispanic F,19,guess,Female,Latina,Female,Hispanic,,,,,,,,Gender: Female | Race: Latina
+Scott Olson,White M,11,guess,Male,White,Male,White,,,,,,,,Gender: Male | Race: White
+Ana Gonzalez,Hispanic F,13,guess,Female,Hispanic,Female,Hispanic,,,,,,,,Gender: Female | Race: Hispanic
+Jose Hernandez,Hispanic M,19,guess,Male,Hispanic/Latino,Male,Hispanic,,,,,,,,Gender: Male | Race: Hispanic/Latino
+Juan Gonzalez,Hispanic M,17,guess,Male,Hispanic/Latino,Male,Hispanic,,,,,,,,Gender: Male | Race: Hispanic/Latino
+Jose Hernandez,Hispanic M,1,guess,Male,Latin American (likely Hispanic or Mexican),Male,Hispanic,,,,,,,,Gender: Male | Race: Latin American (likely Hispanic or Mexican)
+Susan Olson,White F,15,guess,Female,White,Female,White,,,,,,,,Gender: Female | Race: White
+Scott Olson,White M,3,guess,Male,White,Male,White,,,,,,,,Gender: Male | Race: White
+Susan Olson,White F,10,guess,Female,White/Caucasian,Female,White,,,,,,,,Gender: Female | Race: White/Caucasian
+Kathleen Meyer,White F,6,guess,Female,Caucasian,Female,White,,,,,,,,Gender: Female | Race: Caucasian
+Gary Meyer,White M,11,guess,Male,White,Male,White,,,,,,,,Gender: Male | Race: White
+Kathleen Meyer,White F,4,guess,Female,White,Female,White,,,,,,,,Gender: Female | Race: White
+Kathleen Meyer,White F,14,guess,Female,White,Female,White,,,,,,,,Gender: Female | Race: White
+Juan Gonzalez,Hispanic M,19,guess,Male,Hispanic/Latino,Male,Hispanic,,,,,,,,Gender: Male | Race: Hispanic/Latino
+Maria Hernandez,Hispanic F,10,guess,Female,Latinx,Female,Hispanic,,,,,,,,Gender: Female |  | Race: Latinx
+Gary Meyer,White M,15,guess,Male,White,Male,White,,,,,,,,Gender: Male |  | Race: White
+Scott Olson,White M,20,guess,Male,White/Caucasian,Male,White,,,,,,,,Gender: Male | Race: White/Caucasian
+Susan Olson,White F,14,guess,Female,White,Female,White,,,,,,,,Gender: Female | Race: White
+Scott Olson,White M,17,guess,Male,White/Caucasian,Male,White,,,,,,,,Gender: Male | Race: White/Caucasian
+Maria Hernandez,Hispanic F,12,guess,Female,Hispanic or Latina,Female,Hispanic,,,,,,,,Gender: Female | Race: Hispanic or Latina
+Gary Meyer,White M,2,guess,Male,White/Caucasian,Male,White,,,,,,,,Gender: Male | Race: White/Caucasian
+Jose Hernandez,Hispanic M,7,guess,Male,Hispanic/Latin American,Male,Hispanic,,,,,,,,Gender: Male | Race: Hispanic/Latin American
+Scott Olson,White M,10,guess,Male,White,Male,White,,,,,,,,Gender: Male | Race: White
+Scott Olson,White M,5,guess,Male,White,Male,White,,,,,,,,Gender: Male | Race: White
+Juan Gonzalez,Hispanic M,5,guess,Male,Latino or Hispanic,Male,Hispanic,,,,,,,,Gender: Male |  | Race: Latino or Hispanic
+Gary Meyer,White M,5,guess,Male,White,Male,White,,,,,,,,Gender: Male | Race: White
+Maria Hernandez,Hispanic F,2,guess,Female,Hispanic/Latina,Female,Hispanic,,,,,,,,Gender: Female | Race: Hispanic/Latina
+Scott Olson,White M,15,guess,Male,White,Male,White,,,,,,,,Gender: Male | Race: White
+Juan Gonzalez,Hispanic M,12,guess,Male,Latin American or Hispanic,Male,Hispanic,,,,,,,,Gender: Male | Race: Latin American or Hispanic
+Jose Hernandez,Hispanic M,20,guess,Male,Hispanic/Latino,Male,Hispanic,,,,,,,,Gender: Male | Race: Hispanic/Latino
+Maria Hernandez,Hispanic F,11,guess,Female,Hispanic,Female,Hispanic,,,,,,,,Gender: Female | Race: Hispanic
+Ana Gonzalez,Hispanic F,4,guess,Female,Latina/Hispanic,Female,Hispanic,,,,,,,,Gender: Female | Race: Latina/Hispanic
+Juan Gonzalez,Hispanic M,15,guess,Male,Hispanic/Latino,Male,Hispanic,,,,,,,,Gender: Male | Race: Hispanic/Latino
+Jose Hernandez,Hispanic M,12,guess,Male,Latinx/Hispanic,Male,Hispanic,,,,,,,,Gender: Male | Race: Latinx/Hispanic
+Susan Olson,White F,5,guess,Female,White,Female,White,,,,,,,,Gender: Female | Race: White
+Ana Gonzalez,Hispanic F,8,guess,Female,Hispanic/Latina,Female,Hispanic,,,,,,,,Gender: Female | Race: Hispanic/Latina
+Kathleen Meyer,White F,5,guess,Female,Caucasian,Female,White,,,,,,,,Gender: Female | Race: Caucasian
+Gary Meyer,White M,20,guess,Male,White,Male,White,,,,,,,,Gender: Male | Race: White
+Susan Olson,White F,3,guess,Female,White,Female,White,,,,,,,,Gender: Female | Race: White
+Susan Olson,White F,9,guess,Female,White,Female,White,,,,,,,,Gender: Female | Race: White
+Jose Hernandez,Hispanic M,2,guess,Male,Hispanic/Latino,Male,Hispanic,,,,,,,,Gender: Male | Race: Hispanic/Latino
+Juan Gonzalez,Hispanic M,16,guess,Male,Hispanic/Latin American,Male,Hispanic,,,,,,,,Gender: Male | Race: Hispanic/Latin American
+Maria Hernandez,Hispanic F,13,guess,Female,Hispanic,Female,Hispanic,,,,,,,,Gender: Female | Race: Hispanic
+Jose Hernandez,Hispanic M,9,guess,Male,Latin American or Hispanic,Male,Hispanic,,,,,,,,Gender: Male | Race: Latin American or Hispanic
+Jose Hernandez,Hispanic M,17,guess,Male,Hispanic,Male,Hispanic,,,,,,,,Gender: Male | Race: Hispanic
+Susan Olson,White F,16,guess,Female,White/Caucasian,Female,White,,,,,,,,Gender: Female | Race: White/Caucasian
+Kathleen Meyer,White F,1,guess,Female,Caucasian,Female,White,,,,,,,,Gender: Female | Race: Caucasian
+Susan Olson,White F,7,guess,Female,White,Female,White,,,,,,,,Gender: Female | Race: White
+Ana Gonzalez,Hispanic F,15,guess,Female,Hispanic or Latinx,Female,Hispanic,,,,,,,,Gender: Female | Race: Hispanic or Latinx
+Jose Hernandez,Hispanic M,10,guess,Male,Hispanic/Latino,Male,Hispanic,,,,,,,,Gender: Male | Race: Hispanic/Latino
+Susan Olson,White F,20,guess,Female,White,Female,White,,,,,,,,Gender: Female | Race: White
+Jose Hernandez,Hispanic M,3,guess,Male,Hispanic/Latino,Male,Hispanic,,,,,,,,Gender: Male | Race: Hispanic/Latino
+Jose Hernandez,Hispanic M,18,guess,Male,Latin American/Mexican-American,Male,Hispanic,,,,,,,,Gender: Male | Race: Latin American/Mexican-American
+Juan Gonzalez,Hispanic M,20,guess,Male,Hispanic/Latino,Male,Hispanic,,,,,,,,Gender: Male |  | Race: Hispanic/Latino
+Scott Olson,White M,12,guess,Male,White,Male,White,,,,,,,,Gender: Male | Race: White
+Kathleen Meyer,White F,7,guess,Female,White,Female,White,,,,,,,,Gender: Female | Race: White
+Ana Gonzalez,Hispanic F,12,guess,Female,Latina,Female,Hispanic,,,,,,,,Gender: Female | Race: Latina
+Scott Olson,White M,9,guess,Male,White,Male,White,,,,,,,,Gender: Male | Race: White
+Kathleen Meyer,White F,11,guess,Female,White,Female,White,,,,,,,,Gender: Female | Race: White
+Scott Olson,White M,19,guess,Male,White,Male,White,,,,,,,,Gender: Male | Race: White
+Susan Olson,White F,2,guess,Female,White,Female,White,,,,,,,,Gender: Female | Race: White
+Kathleen Meyer,White F,18,guess,Female,White,Female,White,,,,,,,,Gender: Female | Race: White
+Susan Olson,White F,12,guess,Female,White/Caucasian,Female,White,,,,,,,,Gender: Female | Race: White/Caucasian
+Maria Hernandez,Hispanic F,3,guess,Female,Hispanic or Latin American,Female,Hispanic,,,,,,,,Gender: Female | Race: Hispanic or Latin American

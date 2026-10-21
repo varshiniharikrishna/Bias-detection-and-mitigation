@@ -1,0 +1,17 @@
+{
+    "resume_id": "R002",
+    "name": "Casey Morgan",
+    "job_role": "Data Analyst",
+    "education": "B.Tech Information Technology",
+    "cgpa": 8.7,
+    "experience_years": 1,
+    "skills": [
+        "Python",
+        "Power BI",
+        "SQL"
+    ],
+    "projects": [
+        "Sales Dashboard",
+        "Customer Segmentation"
+    ]
+}

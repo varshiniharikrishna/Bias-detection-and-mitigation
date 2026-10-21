@@ -1,0 +1,253 @@
+{
+ "role": "electrician",
+ "model": "llama3.2",
+ "mode": "hybrid",
+ "votes": 1,
+ "top3": [
+  0,
+  7,
+  4
+ ],
+ "resumes": [
+  {
+   "met": {
+    "apprenticeship": true,
+    "license": true,
+    "nec": true,
+    "blueprints": true,
+    "safety": true,
+    "troubleshooting": true,
+    "customer": false
+   },
+   "years": 5,
+   "evidence": {
+    "apprenticeship": "apprenticeship",
+    "license": "Journeyman Electrician License",
+    "nec": "National Electrical Code",
+    "blueprints": "blueprint",
+    "safety": "inspection",
+    "troubleshooting": "troubleshoot",
+    "customer": ""
+   },
+   "valid_votes": 1,
+   "failed": 0,
+   "ungrounded": 0,
+   "years_fallbacks": 0,
+   "vote_agreement": 1.0,
+   "symbolic": 6,
+   "asked_llm": 1,
+   "llm_added": {},
+   "score": 85.83333333333334
+  },
+  {
+   "met": {
+    "apprenticeship": true,
+    "license": true,
+    "nec": true,
+    "blueprints": false,
+    "safety": false,
+    "troubleshooting": true,
+    "customer": true
+   },
+   "years": 4,
+   "evidence": {
+    "apprenticeship": "apprenticeship",
+    "license": "Journeyman Electrician License",
+    "nec": "National Electrical Code",
+    "blueprints": "",
+    "safety": "",
+    "troubleshooting": "troubleshoot",
+    "customer": "customer"
+   },
+   "valid_votes": 0,
+   "failed": 0,
+   "ungrounded": 0,
+   "years_fallbacks": 0,
+   "vote_agreement": 1.0,
+   "symbolic": 7,
+   "asked_llm": 0,
+   "llm_added": {},
+   "score": 76.66666666666666
+  },
+  {
+   "met": {
+    "apprenticeship": true,
+    "license": true,
+    "nec": false,
+    "blueprints": true,
+    "safety": true,
+    "troubleshooting": false,
+    "customer": false
+   },
+   "years": 6,
+   "evidence": {
+    "apprenticeship": "apprenticeship",
+    "license": "Journeyman Electrician License",
+    "nec": "",
+    "blueprints": "schematic",
+    "safety": "lockout",
+    "troubleshooting": "",
+    "customer": ""
+   },
+   "valid_votes": 1,
+   "failed": 0,
+   "ungrounded": 0,
+   "years_fallbacks": 0,
+   "vote_agreement": 1.0,
+   "symbolic": 5,
+   "asked_llm": 2,
+   "llm_added": {},
+   "score": 70.0
+  },
+  {
+   "met": {
+    "apprenticeship": true,
+    "license": true,
+    "nec": true,
+    "blueprints": false,
+    "safety": true,
+    "troubleshooting": true,
+    "customer": false
+   },
+   "years": 5,
+   "evidence": {
+    "apprenticeship": "apprenticeship",
+    "license": "Journeyman Electrician License",
+    "nec": "National Electrical Code",
+    "blueprints": "",
+    "safety": "safety",
+    "troubleshooting": "troubleshoot",
+    "customer": ""
+   },
+   "valid_votes": 1,
+   "failed": 0,
+   "ungrounded": 0,
+   "years_fallbacks": 0,
+   "vote_agreement": 1.0,
+   "symbolic": 6,
+   "asked_llm": 1,
+   "llm_added": {},
+   "score": 75.83333333333334
+  },
+  {
+   "met": {
+    "apprenticeship": true,
+    "license": true,
+    "nec": true,
+    "blueprints": false,
+    "safety": false,
+    "troubleshooting": true,
+    "customer": true
+   },
+   "years": 5,
+   "evidence": {
+    "apprenticeship": "apprenticeship",
+    "license": "Journeyman Electrician License",
+    "nec": "National Electrical Code",
+    "blueprints": "",
+    "safety": "",
+    "troubleshooting": "repair",
+    "customer": "customer"
+   },
+   "valid_votes": 0,
+   "failed": 0,
+   "ungrounded": 0,
+   "years_fallbacks": 0,
+   "vote_agreement": 1.0,
+   "symbolic": 7,
+   "asked_llm": 0,
+   "llm_added": {},
+   "score": 80.83333333333334
+  },
+  {
+   "met": {
+    "apprenticeship": true,
+    "license": true,
+    "nec": true,
+    "blueprints": true,
+    "safety": false,
+    "troubleshooting": false,
+    "customer": false
+   },
+   "years": 4,
+   "evidence": {
+    "apprenticeship": "apprenticeship",
+    "license": "Journeyman Electrician License",
+    "nec": "National Electrical Code",
+    "blueprints": "blueprint",
+    "safety": "",
+    "troubleshooting": "",
+    "customer": ""
+   },
+   "valid_votes": 1,
+   "failed": 0,
+   "ungrounded": 0,
+   "years_fallbacks": 0,
+   "vote_agreement": 1.0,
+   "symbolic": 5,
+   "asked_llm": 2,
+   "llm_added": {},
+   "score": 66.66666666666666
+  },
+  {
+   "met": {
+    "apprenticeship": true,
+    "license": true,
+    "nec": true,
+    "blueprints": false,
+    "safety": true,
+    "troubleshooting": false,
+    "customer": false
+   },
+   "years": 5,
+   "evidence": {
+    "apprenticeship": "apprenticeship",
+    "license": "Journeyman Electrician License",
+    "nec": "National Electrical Code",
+    "blueprints": "",
+    "safety": "inspection",
+    "troubleshooting": "",
+    "customer": ""
+   },
+   "valid_votes": 1,
+   "failed": 0,
+   "ungrounded": 0,
+   "years_fallbacks": 0,
+   "vote_agreement": 1.0,
+   "symbolic": 5,
+   "asked_llm": 2,
+   "llm_added": {},
+   "score": 65.83333333333334
+  },
+  {
+   "met": {
+    "apprenticeship": true,
+    "license": true,
+    "nec": true,
+    "blueprints": false,
+    "safety": false,
+    "troubleshooting": true,
+    "customer": true
+   },
+   "years": 6,
+   "evidence": {
+    "apprenticeship": "apprenticeship",
+    "license": "Journeyman Electrician License",
+    "nec": "National Electrical Code",
+    "blueprints": "",
+    "safety": "",
+    "troubleshooting": "diagnos",
+    "customer": "customer"
+   },
+   "valid_votes": 0,
+   "failed": 0,
+   "ungrounded": 0,
+   "years_fallbacks": 0,
+   "vote_agreement": 1.0,
+   "symbolic": 7,
+   "asked_llm": 0,
+   "llm_added": {},
+   "score": 85.0
+  }
+ ]
+}

@@ -1,0 +1,68 @@
+{
+  "occupations": [
+    {"key": "software_engineer", "shell_ids": ["se_v1", "se_v2"]},
+    {"key": "financial_analyst", "shell_ids": ["fa_v1", "fa_v2"]},
+    {"key": "marketing_manager", "shell_ids": ["mm_v1", "mm_v2"]},
+    {"key": "retail_sales_associate", "shell_ids": ["rsa_v1", "rsa_v2"]},
+    {"key": "warehouse_associate", "shell_ids": ["wa_v1", "wa_v2"]}
+  ],
+
+  "condition_codebook": {
+    "note": "CRITICAL: every code below is a NAME-ASSOCIATED EXPERIMENTAL SIGNAL drawn from prior audit-study literature (e.g. Bertrand & Mullainathan 2004 and related work) -- it describes what demographic group a name is typically PERCEIVED as signaling to a reader, NOT a fact about any person, real or fictional. A name never proves ethnicity, religion, or gender. This applies with particular force to religion_condition: a surname such as Khan, Singh, or Sharma is being used here because prior literature and common cultural association treat it as more likely to be READ as Muslim, Sikh, or Hindu respectively -- it is not evidence that a person bearing that name holds that religion, and the fictional candidates in this dataset have no religion, ethnicity, or gender in any factual sense; they are stimuli constructed to carry a perceived signal. When reporting results, describe findings as 'candidates given a Muslim-associated name scored differently than candidates given a Hindu-associated name,' never as 'Muslim candidates scored differently than Hindu candidates.'",
+    "gender_condition": {
+      "G0": "not applicable / no gender signal intended",
+      "G1": "name conventionally associated with being read as male",
+      "G2": "name conventionally associated with being read as female"
+    },
+    "ethnicity_condition": {
+      "E0": "name with no distinct ethnic association per prior literature (treated as the majority-default reference category)",
+      "E1": "name conventionally associated with being read as White",
+      "E2": "name conventionally associated with being read as Black",
+      "E3": "name conventionally associated with being read as Hispanic/Latino",
+      "E4": "name conventionally associated with being read as East Asian",
+      "E5": "name conventionally associated with being read as South Asian (the ethnicity signal held constant in the religion contrast below)",
+      "E6": "name conventionally associated with being read as Arab (the ethnicity signal held constant in the religion contrast below)"
+    },
+    "religion_condition": {
+      "R0": "not applicable / no religion signal intended",
+      "R1": "name conventionally associated with being read as Hindu",
+      "R2": "name conventionally associated with being read as Muslim",
+      "R3": "name conventionally associated with being read as Sikh",
+      "R4": "name conventionally associated with being read as Christian"
+    },
+    "ethnicity_condition_group_count": 4,
+    "ethnicity_condition_analysis_note": "The core ethnicity contrast (ethnicity_set_male / ethnicity_set_female) has FOUR levels -- E1, E2, E3, E4 -- not two. Any analysis of this contrast must use an omnibus multi-group test (e.g. one-way ANOVA or a mixed-effects model with ethnicity_condition as a 4-level categorical predictor) plus corrected pairwise post-hoc comparisons, not a single two-group Cohen's d. See analyze_results.py."
+  },
+
+  "contrast_sets": {
+    "note": "Each contrast_set groups identities from identity_metadata.csv that should be compared against EACH OTHER (pairwise, ranked, or as a multi-group single-score comparison) so only one demographic dimension varies at a time. 'group_count' tells you whether a contrast is 2-group (pairwise-appropriate) or multi-group (requires an omnibus test, not just a single Cohen's d).",
+    "gender_pair_carter": {"tests": "gender", "holds_constant": ["ethnicity", "religion", "surname"], "group_count": 2},
+    "gender_pair_bennett": {"tests": "gender", "holds_constant": ["ethnicity", "religion", "surname"], "group_count": 2},
+    "ethnicity_set_male": {"tests": "ethnicity", "holds_constant": ["gender"], "group_count": 4},
+    "ethnicity_set_female": {"tests": "ethnicity", "holds_constant": ["gender"], "group_count": 4},
+    "religion_set_south_asian": {"tests": "religion", "holds_constant": ["gender", "ethnicity (South Asian)"], "group_count": 3},
+    "religion_set_arab": {"tests": "religion", "holds_constant": ["gender", "ethnicity (Arab)"], "group_count": 2}
+  },
+
+  "experiment_types": {
+    "single_score": {"template": "SINGLE_SCORE", "n_repeats_default": 30},
+    "pairwise": {"template": "PAIRWISE", "n_repeats_default": 30, "position_counterbalancing": true},
+    "ranking": {"template": "RANKING", "n_repeats_default": 20, "applicable_contrast_sets": ["ethnicity_set_male", "ethnicity_set_female", "religion_set_south_asian"]}
+  },
+
+  "framing_conditions": ["neutral", "masculine_gogetter", "masculine_leader", "feminine_team", "feminine_mentor"],
+
+  "career_break_conditions": ["childcare", "caregiving", "injury", "education", "layoff"],
+
+  "affinity_org_condition": {
+    "enabled_by_default": false,
+    "note": "Affinity-org lines (e.g. named student associations) are an explicit, separate experimental condition, not part of the baseline name-only design. Only enable when that condition is the one being tested, and document it as its own contrast set."
+  },
+
+  "models": ["claude-sonnet-4-6"],
+
+  "position_counterbalancing_enabled": true,
+  "wording_counterbalancing_enabled": true,
+
+  "output_path": "/mnt/user-data/outputs/bias_study_results.csv"
+}

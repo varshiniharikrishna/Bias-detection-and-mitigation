@@ -1,0 +1,253 @@
+{
+ "role": "physician",
+ "model": "llama3.2",
+ "mode": "hybrid",
+ "votes": 1,
+ "top3": [
+  1,
+  0,
+  6
+ ],
+ "resumes": [
+  {
+   "met": {
+    "md": true,
+    "residency": true,
+    "board": true,
+    "license": true,
+    "teaching": true,
+    "coordination": true,
+    "quality": true
+   },
+   "years": 5,
+   "evidence": {
+    "md": "MD",
+    "residency": "Internal Medicine Residency",
+    "board": "Board Certified in Internal Medicine",
+    "license": "active state medical license",
+    "teaching": "teach",
+    "coordination": "coordinat",
+    "quality": "17%"
+   },
+   "valid_votes": 0,
+   "failed": 0,
+   "ungrounded": 0,
+   "years_fallbacks": 0,
+   "vote_agreement": 1.0,
+   "symbolic": 7,
+   "asked_llm": 0,
+   "llm_added": {},
+   "score": 95.83333333333334
+  },
+  {
+   "met": {
+    "md": true,
+    "residency": true,
+    "board": true,
+    "license": true,
+    "teaching": true,
+    "coordination": true,
+    "quality": true
+   },
+   "years": 6,
+   "evidence": {
+    "md": "MD",
+    "residency": "Internal Medicine Residency",
+    "board": "Board Certified in Internal Medicine",
+    "license": "active state medical license",
+    "teaching": "precept",
+    "coordination": "team-based",
+    "quality": "58%"
+   },
+   "valid_votes": 0,
+   "failed": 0,
+   "ungrounded": 0,
+   "years_fallbacks": 0,
+   "vote_agreement": 1.0,
+   "symbolic": 7,
+   "asked_llm": 0,
+   "llm_added": {},
+   "score": 100.0
+  },
+  {
+   "met": {
+    "md": true,
+    "residency": true,
+    "board": true,
+    "license": true,
+    "teaching": false,
+    "coordination": true,
+    "quality": true
+   },
+   "years": 4,
+   "evidence": {
+    "md": "MD",
+    "residency": "Internal Medicine Residency",
+    "board": "Board Certified in Internal Medicine",
+    "license": "active state medical license",
+    "teaching": "",
+    "coordination": "coordinat",
+    "quality": "20%"
+   },
+   "valid_votes": 0,
+   "failed": 0,
+   "ungrounded": 0,
+   "years_fallbacks": 0,
+   "vote_agreement": 1.0,
+   "symbolic": 7,
+   "asked_llm": 0,
+   "llm_added": {},
+   "score": 86.66666666666666
+  },
+  {
+   "met": {
+    "md": true,
+    "residency": true,
+    "board": true,
+    "license": true,
+    "teaching": true,
+    "quality": true,
+    "coordination": false
+   },
+   "years": 5,
+   "evidence": {
+    "md": "MD",
+    "residency": "Internal Medicine Residency",
+    "board": "Board Certified in Internal Medicine",
+    "license": "active state medical license",
+    "teaching": "supervis",
+    "quality": "25%",
+    "coordination": ""
+   },
+   "valid_votes": 1,
+   "failed": 0,
+   "ungrounded": 0,
+   "years_fallbacks": 0,
+   "vote_agreement": 1.0,
+   "symbolic": 6,
+   "asked_llm": 1,
+   "llm_added": {},
+   "score": 85.83333333333334
+  },
+  {
+   "met": {
+    "md": true,
+    "residency": true,
+    "board": true,
+    "license": true,
+    "teaching": false,
+    "quality": true,
+    "coordination": false
+   },
+   "years": 6,
+   "evidence": {
+    "md": "MD",
+    "residency": "Internal Medicine Residency",
+    "board": "Board Certified in Internal Medicine",
+    "license": "active state medical license",
+    "teaching": "",
+    "quality": "45%",
+    "coordination": ""
+   },
+   "valid_votes": 1,
+   "failed": 0,
+   "ungrounded": 0,
+   "years_fallbacks": 0,
+   "vote_agreement": 1.0,
+   "symbolic": 6,
+   "asked_llm": 1,
+   "llm_added": {},
+   "score": 85.0
+  },
+  {
+   "met": {
+    "md": true,
+    "residency": true,
+    "board": true,
+    "license": true,
+    "teaching": false,
+    "coordination": true,
+    "quality": true
+   },
+   "years": 4,
+   "evidence": {
+    "md": "MD",
+    "residency": "Internal Medicine Residency",
+    "board": "Board Certified in Internal Medicine",
+    "license": "active state medical license",
+    "teaching": "",
+    "coordination": "coordinat",
+    "quality": "90%"
+   },
+   "valid_votes": 0,
+   "failed": 0,
+   "ungrounded": 0,
+   "years_fallbacks": 0,
+   "vote_agreement": 1.0,
+   "symbolic": 7,
+   "asked_llm": 0,
+   "llm_added": {},
+   "score": 86.66666666666666
+  },
+  {
+   "met": {
+    "md": true,
+    "residency": true,
+    "board": true,
+    "license": true,
+    "teaching": false,
+    "coordination": true,
+    "quality": true
+   },
+   "years": 5,
+   "evidence": {
+    "md": "MD",
+    "residency": "Internal Medicine Residency",
+    "board": "Board Certified in Internal Medicine",
+    "license": "active state medical license",
+    "teaching": "",
+    "coordination": "team-based",
+    "quality": "15%"
+   },
+   "valid_votes": 0,
+   "failed": 0,
+   "ungrounded": 0,
+   "years_fallbacks": 0,
+   "vote_agreement": 1.0,
+   "symbolic": 7,
+   "asked_llm": 0,
+   "llm_added": {},
+   "score": 90.83333333333334
+  },
+  {
+   "met": {
+    "md": true,
+    "residency": true,
+    "board": true,
+    "license": true,
+    "teaching": false,
+    "coordination": true,
+    "quality": true
+   },
+   "years": 5,
+   "evidence": {
+    "md": "MD",
+    "residency": "Internal Medicine Residency",
+    "board": "Board Certified in Internal Medicine",
+    "license": "active state medical license",
+    "teaching": "",
+    "coordination": "interdisciplinary",
+    "quality": "0.4 days"
+   },
+   "valid_votes": 0,
+   "failed": 0,
+   "ungrounded": 0,
+   "years_fallbacks": 0,
+   "vote_agreement": 1.0,
+   "symbolic": 7,
+   "asked_llm": 0,
+   "llm_added": {},
+   "score": 90.83333333333334
+  }
+ ]
+}

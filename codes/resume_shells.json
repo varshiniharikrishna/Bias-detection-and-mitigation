@@ -1,0 +1,393 @@
+{
+  "software_engineer": {
+    "occupation_label": "Software Engineer",
+    "status": "high",
+    "shell_variants": [
+      {
+        "shell_id": "se_v1",
+        "summary": "Software engineer with 5 years of experience building backend services and data pipelines. Strong background in Python and cloud infrastructure, with a track record of shipping features that improved system reliability and performance.",
+        "experience": [
+          {
+            "title": "Software Engineer",
+            "employer": "Meridian Systems",
+            "dates": "2021-Present",
+            "bullets": [
+              "Built and maintained microservices handling 2M+ daily requests using Python and Flask",
+              "Led migration of legacy batch jobs to a cloud-based pipeline, reducing processing time by 40%",
+              "Mentored 2 junior engineers and conducted code reviews for a team of 6"
+            ]
+          },
+          {
+            "title": "Software Engineer",
+            "employer": "Vantage Data Co.",
+            "dates": "2019-2021",
+            "bullets": [
+              "Developed internal tools for data validation, cutting manual QA time by 30%",
+              "Collaborated with product team to design REST APIs for a customer-facing dashboard",
+              "Implemented automated testing suite, increasing code coverage from 45% to 85%"
+            ]
+          }
+        ],
+        "education": {"degree": "B.S. Computer Science", "school": "Lakeview State University", "year": "2019"},
+        "skills": ["Python", "SQL", "AWS", "Docker", "Git", "REST APIs", "Agile/Scrum", "CI/CD"],
+        "certifications": ["AWS Certified Developer - Associate"]
+      },
+      {
+        "shell_id": "se_v2",
+        "summary": "Software engineer with 5 years of experience building backend services and data pipelines. Strong background in Python and cloud infrastructure, with a track record of shipping features that improved system reliability and performance.",
+        "experience": [
+          {
+            "title": "Software Engineer",
+            "employer": "Northbridge Technologies",
+            "dates": "2021-Present",
+            "bullets": [
+              "Built and maintained microservices handling 2M+ daily requests using Python and Flask",
+              "Led migration of legacy batch jobs to a cloud-based pipeline, reducing processing time by 40%",
+              "Mentored 2 junior engineers and conducted code reviews for a team of 6"
+            ]
+          },
+          {
+            "title": "Software Engineer",
+            "employer": "Coreline Analytics",
+            "dates": "2019-2021",
+            "bullets": [
+              "Developed internal tools for data validation, cutting manual QA time by 30%",
+              "Collaborated with product team to design REST APIs for a customer-facing dashboard",
+              "Implemented automated testing suite, increasing code coverage from 45% to 85%"
+            ]
+          }
+        ],
+        "education": {"degree": "B.S. Computer Science", "school": "Ashford State University", "year": "2019"},
+        "skills": ["Python", "SQL", "AWS", "Docker", "Git", "REST APIs", "Agile/Scrum", "CI/CD"],
+        "certifications": ["AWS Certified Developer - Associate"]
+      }
+    ]
+  },
+
+  "financial_analyst": {
+    "occupation_label": "Financial Analyst",
+    "status": "high",
+    "shell_variants": [
+      {
+        "shell_id": "fa_v1",
+        "summary": "Financial analyst with 5 years of experience in budgeting, forecasting, and variance analysis. Skilled at translating financial data into actionable recommendations for senior leadership.",
+        "experience": [
+          {
+            "title": "Financial Analyst",
+            "employer": "Beacon Capital Group",
+            "dates": "2021-Present",
+            "bullets": [
+              "Built quarterly forecasting models used by leadership to guide $40M+ in budget decisions",
+              "Reduced monthly close time by 25% by redesigning the variance-reporting process",
+              "Presented financial performance summaries to department heads on a monthly basis"
+            ]
+          },
+          {
+            "title": "Financial Analyst",
+            "employer": "Redwood Financial Partners",
+            "dates": "2019-2021",
+            "bullets": [
+              "Maintained and audited budget-vs-actual reports across 6 business units",
+              "Partnered with accounting to reconcile discrepancies in monthly financial statements",
+              "Automated a recurring reporting workflow, saving approximately 10 hours per month"
+            ]
+          }
+        ],
+        "education": {"degree": "B.S. Finance", "school": "Lakeview State University", "year": "2019"},
+        "skills": ["Excel", "SQL", "Financial Modeling", "Forecasting", "Variance Analysis", "PowerPoint"],
+        "certifications": ["CFA Level I Candidate"]
+      },
+      {
+        "shell_id": "fa_v2",
+        "summary": "Financial analyst with 5 years of experience in budgeting, forecasting, and variance analysis. Skilled at translating financial data into actionable recommendations for senior leadership.",
+        "experience": [
+          {
+            "title": "Financial Analyst",
+            "employer": "Harborview Investments",
+            "dates": "2021-Present",
+            "bullets": [
+              "Built quarterly forecasting models used by leadership to guide $40M+ in budget decisions",
+              "Reduced monthly close time by 25% by redesigning the variance-reporting process",
+              "Presented financial performance summaries to department heads on a monthly basis"
+            ]
+          },
+          {
+            "title": "Financial Analyst",
+            "employer": "Crestline Advisory Group",
+            "dates": "2019-2021",
+            "bullets": [
+              "Maintained and audited budget-vs-actual reports across 6 business units",
+              "Partnered with accounting to reconcile discrepancies in monthly financial statements",
+              "Automated a recurring reporting workflow, saving approximately 10 hours per month"
+            ]
+          }
+        ],
+        "education": {"degree": "B.S. Finance", "school": "Ashford State University", "year": "2019"},
+        "skills": ["Excel", "SQL", "Financial Modeling", "Forecasting", "Variance Analysis", "PowerPoint"],
+        "certifications": ["CFA Level I Candidate"]
+      }
+    ]
+  },
+
+  "marketing_manager": {
+    "occupation_label": "Marketing Manager",
+    "status": "high",
+    "shell_variants": [
+      {
+        "shell_id": "mm_v1",
+        "summary": "Marketing manager with 5 years of experience leading integrated campaigns across digital and traditional channels. Track record of growing engagement and pipeline through data-driven strategy.",
+        "experience": [
+          {
+            "title": "Marketing Manager",
+            "employer": "Alderfield Brands",
+            "dates": "2021-Present",
+            "bullets": [
+              "Led a cross-functional team of 4 to launch campaigns that grew qualified leads by 35%",
+              "Managed an annual marketing budget of $600K across paid, organic, and email channels",
+              "Introduced a campaign-attribution dashboard adopted company-wide"
+            ]
+          },
+          {
+            "title": "Marketing Specialist",
+            "employer": "Bluecrest Consumer Goods",
+            "dates": "2019-2021",
+            "bullets": [
+              "Executed email and social campaigns that increased engagement rate by 22%",
+              "Coordinated with design and sales teams to launch 3 major product campaigns",
+              "Analyzed campaign performance data to inform quarterly strategy"
+            ]
+          }
+        ],
+        "education": {"degree": "B.A. Marketing", "school": "Lakeview State University", "year": "2019"},
+        "skills": ["Campaign Strategy", "SEO/SEM", "Google Analytics", "Email Marketing", "Budget Management"],
+        "certifications": ["Google Analytics Certified"]
+      },
+      {
+        "shell_id": "mm_v2",
+        "summary": "Marketing manager with 5 years of experience leading integrated campaigns across digital and traditional channels. Track record of growing engagement and pipeline through data-driven strategy.",
+        "experience": [
+          {
+            "title": "Marketing Manager",
+            "employer": "Northgate Consumer Co.",
+            "dates": "2021-Present",
+            "bullets": [
+              "Led a cross-functional team of 4 to launch campaigns that grew qualified leads by 35%",
+              "Managed an annual marketing budget of $600K across paid, organic, and email channels",
+              "Introduced a campaign-attribution dashboard adopted company-wide"
+            ]
+          },
+          {
+            "title": "Marketing Specialist",
+            "employer": "Fernwood Retail Group",
+            "dates": "2019-2021",
+            "bullets": [
+              "Executed email and social campaigns that increased engagement rate by 22%",
+              "Coordinated with design and sales teams to launch 3 major product campaigns",
+              "Analyzed campaign performance data to inform quarterly strategy"
+            ]
+          }
+        ],
+        "education": {"degree": "B.A. Marketing", "school": "Ashford State University", "year": "2019"},
+        "skills": ["Campaign Strategy", "SEO/SEM", "Google Analytics", "Email Marketing", "Budget Management"],
+        "certifications": ["Google Analytics Certified"]
+      }
+    ]
+  },
+
+  "retail_sales_associate": {
+    "occupation_label": "Retail Sales Associate",
+    "status": "low",
+    "shell_variants": [
+      {
+        "shell_id": "rsa_v1",
+        "summary": "Retail sales associate with 3 years of experience in fast-paced customer-facing environments. Reliable, detail-oriented, and consistently meets sales and service targets.",
+        "experience": [
+          {
+            "title": "Sales Associate",
+            "employer": "Harborline Retail",
+            "dates": "2022-Present",
+            "bullets": [
+              "Consistently met or exceeded monthly sales targets by an average of 15%",
+              "Trained 3 new hires on point-of-sale systems and store procedures",
+              "Maintained visual merchandising standards and stock accuracy for a 2,000 sq ft floor"
+            ]
+          },
+          {
+            "title": "Sales Associate",
+            "employer": "Crestpoint Apparel",
+            "dates": "2021-2022",
+            "bullets": [
+              "Assisted an average of 50+ customers per shift with product selection and checkout",
+              "Processed returns and exchanges in line with store policy with zero audit discrepancies",
+              "Recognized twice for top customer satisfaction scores in the district"
+            ]
+          }
+        ],
+        "education": {"degree": "High School Diploma", "school": "Lakeview High School", "year": "2020"},
+        "skills": ["Point-of-Sale Systems", "Customer Service", "Cash Handling", "Inventory Management"],
+        "certifications": []
+      },
+      {
+        "shell_id": "rsa_v2",
+        "summary": "Retail sales associate with 3 years of experience in fast-paced customer-facing environments. Reliable, detail-oriented, and consistently meets sales and service targets.",
+        "experience": [
+          {
+            "title": "Sales Associate",
+            "employer": "Fieldstone Retail Group",
+            "dates": "2022-Present",
+            "bullets": [
+              "Consistently met or exceeded monthly sales targets by an average of 15%",
+              "Trained 3 new hires on point-of-sale systems and store procedures",
+              "Maintained visual merchandising standards and stock accuracy for a 2,000 sq ft floor"
+            ]
+          },
+          {
+            "title": "Sales Associate",
+            "employer": "Wrenhollow Apparel",
+            "dates": "2021-2022",
+            "bullets": [
+              "Assisted an average of 50+ customers per shift with product selection and checkout",
+              "Processed returns and exchanges in line with store policy with zero audit discrepancies",
+              "Recognized twice for top customer satisfaction scores in the district"
+            ]
+          }
+        ],
+        "education": {"degree": "High School Diploma", "school": "Ashford High School", "year": "2020"},
+        "skills": ["Point-of-Sale Systems", "Customer Service", "Cash Handling", "Inventory Management"],
+        "certifications": []
+      }
+    ]
+  },
+
+  "warehouse_associate": {
+    "occupation_label": "Warehouse Associate",
+    "status": "low",
+    "shell_variants": [
+      {
+        "shell_id": "wa_v1",
+        "summary": "Warehouse associate with 3 years of experience in inventory handling, order fulfillment, and equipment operation. Strong safety record and consistent attendance.",
+        "experience": [
+          {
+            "title": "Warehouse Associate",
+            "employer": "Ridgeline Logistics",
+            "dates": "2022-Present",
+            "bullets": [
+              "Picked and packed an average of 200+ orders per shift with 99.5% accuracy",
+              "Operated forklift and pallet jack equipment in compliance with safety protocols",
+              "Maintained zero safety incidents over 2 years on the floor"
+            ]
+          },
+          {
+            "title": "Warehouse Associate",
+            "employer": "Corestack Distribution",
+            "dates": "2021-2022",
+            "bullets": [
+              "Conducted daily inventory counts and reconciled discrepancies with the WMS system",
+              "Loaded and unloaded delivery trucks on a rotating shift schedule",
+              "Recognized for perfect attendance over a 12-month period"
+            ]
+          }
+        ],
+        "education": {"degree": "High School Diploma", "school": "Lakeview High School", "year": "2020"},
+        "skills": ["Forklift Operation", "Inventory Management", "Warehouse Management Systems", "Safety Compliance"],
+        "certifications": ["Forklift Operator Certification"]
+      },
+      {
+        "shell_id": "wa_v2",
+        "summary": "Warehouse associate with 3 years of experience in inventory handling, order fulfillment, and equipment operation. Strong safety record and consistent attendance.",
+        "experience": [
+          {
+            "title": "Warehouse Associate",
+            "employer": "Summit Distribution Co.",
+            "dates": "2022-Present",
+            "bullets": [
+              "Picked and packed an average of 200+ orders per shift with 99.5% accuracy",
+              "Operated forklift and pallet jack equipment in compliance with safety protocols",
+              "Maintained zero safety incidents over 2 years on the floor"
+            ]
+          },
+          {
+            "title": "Warehouse Associate",
+            "employer": "Ironvale Logistics",
+            "dates": "2021-2022",
+            "bullets": [
+              "Conducted daily inventory counts and reconciled discrepancies with the WMS system",
+              "Loaded and unloaded delivery trucks on a rotating shift schedule",
+              "Recognized for perfect attendance over a 12-month period"
+            ]
+          }
+        ],
+        "education": {"degree": "High School Diploma", "school": "Ashford High School", "year": "2020"},
+        "skills": ["Forklift Operation", "Inventory Management", "Warehouse Management Systems", "Safety Compliance"],
+        "certifications": ["Forklift Operator Certification"]
+      }
+    ]
+  },
+
+  "software_engineer_career_break_pilot": {
+    "occupation_label": "Software Engineer",
+    "status": "high",
+    "note": "Dedicated occupation key for the career-break bias pilot. Kept separate from 'software_engineer' so this pilot's intentional date manipulation never gets validated against se_v1/se_v2's cosmetic-only equivalence rule.",
+    "variant_equivalence_exceptions": ["dates"],
+    "shell_variants": [
+      {
+        "shell_id": "se_cb_baseline_v1",
+        "summary": "Software engineer with 5 years of experience across backend development and system design. Strong background in Python, with a track record of delivering reliable, well-tested features.",
+        "experience": [
+          {
+            "title": "Software Engineer",
+            "employer": "Alderbrook Systems",
+            "dates": "2018-2021",
+            "bullets": [
+              "Built and maintained backend services handling 1M+ daily requests using Python and Django",
+              "Collaborated with cross-functional teams to ship 3 major product features",
+              "Reduced average API response time by 25% through query optimization"
+            ]
+          },
+          {
+            "title": "Software Engineer",
+            "employer": "Brightfield Technologies",
+            "dates": "2021-2023",
+            "bullets": [
+              "Led development of a microservices architecture adopted by 2 additional teams",
+              "Mentored 1 junior engineer and conducted regular code reviews",
+              "Implemented a CI/CD pipeline that cut deployment time by 40%"
+            ]
+          }
+        ],
+        "education": {"degree": "B.S. Computer Science", "school": "Fairmont State University", "year": "2017"},
+        "skills": ["Python", "Django", "SQL", "AWS", "Git", "REST APIs", "Agile/Scrum", "CI/CD"],
+        "certifications": ["AWS Certified Developer - Associate"]
+      },
+      {
+        "shell_id": "se_cb_break_v1",
+        "summary": "Software engineer with 5 years of experience across backend development and system design. Strong background in Python, with a track record of delivering reliable, well-tested features.",
+        "experience": [
+          {
+            "title": "Software Engineer",
+            "employer": "Alderbrook Systems",
+            "dates": "2018-2021",
+            "bullets": [
+              "Built and maintained backend services handling 1M+ daily requests using Python and Django",
+              "Collaborated with cross-functional teams to ship 3 major product features",
+              "Reduced average API response time by 25% through query optimization"
+            ]
+          },
+          {
+            "title": "Software Engineer",
+            "employer": "Brightfield Technologies",
+            "dates": "2023-2025",
+            "bullets": [
+              "Led development of a microservices architecture adopted by 2 additional teams",
+              "Mentored 1 junior engineer and conducted regular code reviews",
+              "Implemented a CI/CD pipeline that cut deployment time by 40%"
+            ]
+          }
+        ],
+        "education": {"degree": "B.S. Computer Science", "school": "Fairmont State University", "year": "2017"},
+        "skills": ["Python", "Django", "SQL", "AWS", "Git", "REST APIs", "Agile/Scrum", "CI/CD"],
+        "certifications": ["AWS Certified Developer - Associate"]
+      }
+    ]
+  }
+}

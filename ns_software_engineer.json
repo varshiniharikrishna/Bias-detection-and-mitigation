@@ -1,0 +1,253 @@
+{
+ "role": "software_engineer",
+ "model": "llama3.2",
+ "mode": "hybrid",
+ "votes": 1,
+ "top3": [
+  1,
+  4,
+  0
+ ],
+ "resumes": [
+  {
+   "met": {
+    "degree": true,
+    "languages": true,
+    "apis": true,
+    "databases": true,
+    "cicd": true,
+    "code_quality": true,
+    "collaboration": true
+   },
+   "years": 4,
+   "evidence": {
+    "degree": "BS Computer Science",
+    "languages": "Python",
+    "apis": "REST",
+    "databases": "SQL",
+    "cicd": "GitHub Actions",
+    "code_quality": "unit test",
+    "collaboration": "mentor"
+   },
+   "valid_votes": 0,
+   "failed": 0,
+   "ungrounded": 0,
+   "years_fallbacks": 0,
+   "vote_agreement": 1.0,
+   "symbolic": 7,
+   "asked_llm": 0,
+   "llm_added": {},
+   "score": 95.0
+  },
+  {
+   "met": {
+    "degree": true,
+    "languages": true,
+    "apis": true,
+    "databases": true,
+    "cicd": true,
+    "code_quality": true,
+    "collaboration": false
+   },
+   "years": 5,
+   "evidence": {
+    "degree": "BS Computer Science",
+    "languages": "Java",
+    "apis": "microservices",
+    "databases": "PostgreSQL",
+    "cicd": "Jenkins",
+    "code_quality": "code reviews",
+    "collaboration": ""
+   },
+   "valid_votes": 1,
+   "failed": 0,
+   "ungrounded": 0,
+   "years_fallbacks": 0,
+   "vote_agreement": 1.0,
+   "symbolic": 6,
+   "asked_llm": 1,
+   "llm_added": {},
+   "score": 95.0
+  },
+  {
+   "met": {
+    "degree": true,
+    "languages": true,
+    "apis": true,
+    "databases": true,
+    "cicd": true,
+    "code_quality": false,
+    "collaboration": false
+   },
+   "years": 3,
+   "evidence": {
+    "degree": "BS Information Systems",
+    "languages": "Python",
+    "apis": "Django",
+    "databases": "PostgreSQL",
+    "cicd": "GitHub Actions",
+    "code_quality": "",
+    "collaboration": ""
+   },
+   "valid_votes": 1,
+   "failed": 0,
+   "ungrounded": 0,
+   "years_fallbacks": 0,
+   "vote_agreement": 1.0,
+   "symbolic": 5,
+   "asked_llm": 2,
+   "llm_added": {},
+   "score": 75.0
+  },
+  {
+   "met": {
+    "degree": true,
+    "languages": true,
+    "apis": true,
+    "databases": true,
+    "cicd": true,
+    "code_quality": true,
+    "collaboration": false
+   },
+   "years": 4,
+   "evidence": {
+    "degree": "BS Software Engineering",
+    "languages": "Java",
+    "apis": "REST",
+    "databases": "SQL",
+    "cicd": "CI/CD",
+    "code_quality": "code reviews",
+    "collaboration": ""
+   },
+   "valid_votes": 1,
+   "failed": 0,
+   "ungrounded": 0,
+   "years_fallbacks": 0,
+   "vote_agreement": 1.0,
+   "symbolic": 6,
+   "asked_llm": 1,
+   "llm_added": {},
+   "score": 90.0
+  },
+  {
+   "met": {
+    "degree": true,
+    "languages": true,
+    "apis": true,
+    "databases": true,
+    "cicd": true,
+    "code_quality": true,
+    "collaboration": false
+   },
+   "years": 5,
+   "evidence": {
+    "degree": "BS Computer Science",
+    "languages": "Python",
+    "apis": "FastAPI",
+    "databases": "SQL",
+    "cicd": "Docker",
+    "code_quality": "unit tests",
+    "collaboration": ""
+   },
+   "valid_votes": 1,
+   "failed": 0,
+   "ungrounded": 0,
+   "years_fallbacks": 0,
+   "vote_agreement": 1.0,
+   "symbolic": 6,
+   "asked_llm": 1,
+   "llm_added": {},
+   "score": 95.0
+  },
+  {
+   "met": {
+    "degree": true,
+    "languages": true,
+    "apis": true,
+    "databases": true,
+    "cicd": true,
+    "code_quality": true,
+    "collaboration": false
+   },
+   "years": 3,
+   "evidence": {
+    "degree": "BS Computer Science",
+    "languages": "Java",
+    "apis": "REST",
+    "databases": "MySQL",
+    "cicd": "CI/CD",
+    "code_quality": "test coverage",
+    "collaboration": ""
+   },
+   "valid_votes": 1,
+   "failed": 0,
+   "ungrounded": 0,
+   "years_fallbacks": 0,
+   "vote_agreement": 1.0,
+   "symbolic": 6,
+   "asked_llm": 1,
+   "llm_added": {},
+   "score": 85.0
+  },
+  {
+   "met": {
+    "degree": true,
+    "languages": true,
+    "apis": true,
+    "databases": true,
+    "cicd": true,
+    "collaboration": true,
+    "code_quality": false
+   },
+   "years": 4,
+   "evidence": {
+    "degree": "BS Computer Engineering",
+    "languages": "Python",
+    "apis": "APIs",
+    "databases": "SQL",
+    "cicd": "Git",
+    "collaboration": "mentor",
+    "code_quality": ""
+   },
+   "valid_votes": 1,
+   "failed": 0,
+   "ungrounded": 0,
+   "years_fallbacks": 0,
+   "vote_agreement": 1.0,
+   "symbolic": 6,
+   "asked_llm": 1,
+   "llm_added": {},
+   "score": 85.0
+  },
+  {
+   "met": {
+    "degree": true,
+    "languages": true,
+    "apis": true,
+    "databases": true,
+    "cicd": true,
+    "code_quality": true,
+    "collaboration": false
+   },
+   "years": 4,
+   "evidence": {
+    "degree": "BS Computer Science",
+    "languages": "Java",
+    "apis": "REST",
+    "databases": "SQL",
+    "cicd": "GitLab CI",
+    "code_quality": "unit tests",
+    "collaboration": ""
+   },
+   "valid_votes": 1,
+   "failed": 0,
+   "ungrounded": 0,
+   "years_fallbacks": 0,
+   "vote_agreement": 1.0,
+   "symbolic": 6,
+   "asked_llm": 1,
+   "llm_added": {},
+   "score": 90.0
+  }
+ ]
+}

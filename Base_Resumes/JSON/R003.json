@@ -1,0 +1,17 @@
+{
+    "resume_id": "R003",
+    "name": "Taylor Brooks",
+    "job_role": "Cybersecurity Analyst",
+    "education": "B.Tech Cyber Security",
+    "cgpa": 9.1,
+    "experience_years": 2,
+    "skills": [
+        "Wireshark",
+        "Linux",
+        "Python"
+    ],
+    "projects": [
+        "Network Intrusion Detection",
+        "Security Audit Tool"
+    ]
+}

@@ -1,0 +1,272 @@
+{
+ "role": "teacher",
+ "model": "llama3.2",
+ "mode": "hybrid",
+ "votes": 1,
+ "top3": [
+  0,
+  4,
+  7
+ ],
+ "resumes": [
+  {
+   "met": {
+    "degree": true,
+    "cert": true,
+    "edtech": true,
+    "parents": true,
+    "outcomes": true,
+    "classroom_mgmt": true,
+    "lesson_planning": true,
+    "differentiation": true
+   },
+   "years": 4,
+   "evidence": {
+    "degree": "BA Elementary Education, State University (2020)",
+    "cert": "Teaching Certificate",
+    "edtech": "Google Classroom",
+    "parents": "parent",
+    "outcomes": "62%",
+    "classroom_mgmt": "behavior",
+    "lesson_planning": "planned",
+    "differentiation": "differentiat"
+   },
+   "valid_votes": 0,
+   "failed": 0,
+   "ungrounded": 0,
+   "years_fallbacks": 0,
+   "vote_agreement": 1.0,
+   "symbolic": 8,
+   "asked_llm": 0,
+   "llm_added": {},
+   "score": 91.66666666666666
+  },
+  {
+   "met": {
+    "degree": true,
+    "cert": true,
+    "edtech": true,
+    "parents": true,
+    "outcomes": true,
+    "classroom_mgmt": false,
+    "lesson_planning": false,
+    "differentiation": false
+   },
+   "years": 5,
+   "evidence": {
+    "degree": "BS Education, Lakeview University (2019)",
+    "cert": "Teaching Certificate",
+    "edtech": "Chromebooks",
+    "parents": "famil",
+    "outcomes": "15%",
+    "classroom_mgmt": "",
+    "lesson_planning": "",
+    "differentiation": ""
+   },
+   "valid_votes": 1,
+   "failed": 0,
+   "ungrounded": 0,
+   "years_fallbacks": 0,
+   "vote_agreement": 1.0,
+   "symbolic": 5,
+   "asked_llm": 3,
+   "llm_added": {},
+   "score": 65.83333333333334
+  },
+  {
+   "met": {
+    "degree": true,
+    "cert": true,
+    "edtech": false,
+    "parents": true,
+    "outcomes": true,
+    "classroom_mgmt": true,
+    "lesson_planning": false,
+    "differentiation": false
+   },
+   "years": 3,
+   "evidence": {
+    "degree": "BA Early Childhood Education, Ridgeway University (2022)",
+    "cert": "Teaching Certificate",
+    "edtech": "",
+    "parents": "famil",
+    "outcomes": "90%",
+    "classroom_mgmt": "routines",
+    "lesson_planning": "",
+    "differentiation": ""
+   },
+   "valid_votes": 1,
+   "failed": 0,
+   "ungrounded": 0,
+   "years_fallbacks": 0,
+   "vote_agreement": 1.0,
+   "symbolic": 6,
+   "asked_llm": 2,
+   "llm_added": {},
+   "score": 62.5
+  },
+  {
+   "met": {
+    "degree": true,
+    "cert": true,
+    "edtech": false,
+    "parents": true,
+    "outcomes": true,
+    "differentiation": true,
+    "classroom_mgmt": false,
+    "lesson_planning": false
+   },
+   "years": 4,
+   "evidence": {
+    "degree": "BA Elementary Education, Northfield University (2020)",
+    "cert": "Teaching Certificate",
+    "edtech": "",
+    "parents": "famil",
+    "outcomes": "1.5 reading levels",
+    "differentiation": "English language learners",
+    "classroom_mgmt": "",
+    "lesson_planning": ""
+   },
+   "valid_votes": 1,
+   "failed": 0,
+   "ungrounded": 0,
+   "years_fallbacks": 0,
+   "vote_agreement": 1.0,
+   "symbolic": 6,
+   "asked_llm": 2,
+   "llm_added": {},
+   "score": 66.66666666666666
+  },
+  {
+   "met": {
+    "degree": true,
+    "cert": true,
+    "edtech": false,
+    "parents": true,
+    "outcomes": true,
+    "differentiation": true,
+    "classroom_mgmt": true,
+    "lesson_planning": true
+   },
+   "years": 5,
+   "evidence": {
+    "degree": "BS Elementary Education, Harbor University (2019)",
+    "cert": "Teaching Certificate",
+    "edtech": "",
+    "parents": "famil",
+    "outcomes": "85%",
+    "differentiation": "Inclusi",
+    "classroom_mgmt": "co-taught a 4th grade inclusive classroom;",
+    "lesson_planning": "taught all core subjects; adapted lessons for diverse learning needs."
+   },
+   "valid_votes": 1,
+   "failed": 0,
+   "ungrounded": 0,
+   "years_fallbacks": 0,
+   "vote_agreement": 1.0,
+   "symbolic": 6,
+   "asked_llm": 2,
+   "llm_added": {
+    "classroom_mgmt": "co-taught a 4th grade inclusive classroom;",
+    "lesson_planning": "taught all core subjects; adapted lessons for diverse learning needs."
+   },
+   "score": 90.83333333333334
+  },
+  {
+   "met": {
+    "degree": true,
+    "cert": true,
+    "edtech": true,
+    "parents": false,
+    "outcomes": false,
+    "classroom_mgmt": true,
+    "lesson_planning": true,
+    "differentiation": false
+   },
+   "years": 3,
+   "evidence": {
+    "degree": "BA Elementary Education, Summit University (2022)",
+    "cert": "Teaching Certificate",
+    "edtech": "Seesaw",
+    "parents": "",
+    "outcomes": "",
+    "classroom_mgmt": "classroom management",
+    "lesson_planning": "lesson plan",
+    "differentiation": ""
+   },
+   "valid_votes": 1,
+   "failed": 0,
+   "ungrounded": 0,
+   "years_fallbacks": 0,
+   "vote_agreement": 1.0,
+   "symbolic": 7,
+   "asked_llm": 1,
+   "llm_added": {},
+   "score": 62.5
+  },
+  {
+   "met": {
+    "degree": true,
+    "cert": true,
+    "edtech": false,
+    "parents": true,
+    "outcomes": true,
+    "lesson_planning": true,
+    "classroom_mgmt": false,
+    "differentiation": false
+   },
+   "years": 4,
+   "evidence": {
+    "degree": "BA English and Elementary Education, Valley University (2020)",
+    "cert": "Teaching Certificate",
+    "edtech": "",
+    "parents": "parent",
+    "outcomes": "12%",
+    "lesson_planning": "units",
+    "classroom_mgmt": "",
+    "differentiation": ""
+   },
+   "valid_votes": 1,
+   "failed": 0,
+   "ungrounded": 0,
+   "years_fallbacks": 0,
+   "vote_agreement": 1.0,
+   "symbolic": 6,
+   "asked_llm": 2,
+   "llm_added": {},
+   "score": 66.66666666666666
+  },
+  {
+   "met": {
+    "degree": true,
+    "cert": true,
+    "edtech": false,
+    "parents": false,
+    "outcomes": true,
+    "classroom_mgmt": true,
+    "lesson_planning": true,
+    "differentiation": false
+   },
+   "years": 4,
+   "evidence": {
+    "degree": "BA Elementary Education, Eastgate University (2020)",
+    "cert": "Teaching Certificate",
+    "edtech": "",
+    "parents": "",
+    "outcomes": "35%",
+    "classroom_mgmt": "behavior",
+    "lesson_planning": "planned",
+    "differentiation": ""
+   },
+   "valid_votes": 1,
+   "failed": 0,
+   "ungrounded": 0,
+   "years_fallbacks": 0,
+   "vote_agreement": 1.0,
+   "symbolic": 7,
+   "asked_llm": 1,
+   "llm_added": {},
+   "score": 71.66666666666666
+  }
+ ]
+}
